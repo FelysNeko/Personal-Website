@@ -20,7 +20,8 @@ const CardContainer = ({ mode, id }: Props) => {
       body: JSON.stringify({ action: "projects" }),
     })
       .then((response) => response.json())
-      .then((data) => setProjects(data));
+      .then((data) => setProjects(data))
+      .catch((error) => console.log(error));
   }, []);
 
   return (

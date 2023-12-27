@@ -9,7 +9,7 @@ const Footer = ({ mode }: Props) => {
       data-bs-theme={mode}
     >
       <div className="container-lg">
-        <span className="navbar-text">Authored by GalaxyNeko | 银河猫猫侠</span>
+        <span className="navbar-text">Authored by GalaxyNeko &nbsp;|&nbsp; 银河猫猫侠</span>
       </div>
     </nav>
   );

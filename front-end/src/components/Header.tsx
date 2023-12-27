@@ -20,7 +20,8 @@ const Header = ({ mode, setMode }: Props) => {
       body: JSON.stringify({ action: "links" }),
     })
       .then((response) => response.json())
-      .then((data) => setLinks(data));
+      .then((data) => setLinks(data))
+      .catch((error) => console.log(error));
   }, []);
 
   return (

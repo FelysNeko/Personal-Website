@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Accordion = ({ mode, id }: Props) => {
-  const [more, setMore] = useState([{title: "", text: ""}]);
+  const [more, setMore] = useState([{ title: "", text: "" }]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:9090/api/information", {
@@ -17,7 +17,8 @@ const Accordion = ({ mode, id }: Props) => {
       body: JSON.stringify({ action: "more" }),
     })
       .then((response) => response.json())
-      .then((data) => setMore(data));
+      .then((data) => setMore(data))
+      .catch((error) => console.log(error));
   }, []);
 
   return (
@@ -44,7 +45,7 @@ const Accordion = ({ mode, id }: Props) => {
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordionMore"
               >
-                <div className="accordion-body">{each.text}</div>
+                <div className="accordion-body mx-5">{each.text}</div>
               </div>
             </div>
           ))}

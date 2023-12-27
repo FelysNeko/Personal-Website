@@ -17,7 +17,8 @@ const Hello = ({ mode }: Props) => {
       body: JSON.stringify({ action: "hello" }),
     })
       .then((response) => response.json())
-      .then((data) => setHello(data));
+      .then((data) => setHello(data))
+      .catch((error) => console.log(error));
   }, []);
 
   return (

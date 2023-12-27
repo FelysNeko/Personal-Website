@@ -28,7 +28,7 @@ const Card = ({ mode, info }: Props) => {
       const imageObjectURL = URL.createObjectURL(imageBlob);
       setImage(imageObjectURL);
     };
-    fetchImage();
+    fetchImage().catch((error) => console.log(error));
   }, [info.pic]);
 
   return (
