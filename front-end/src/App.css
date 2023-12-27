@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-position: 95%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1,
+span.badge,
+button.btn {
+  text-transform: uppercase;
+}
+
+button.btn, button.accordion-button {
+  font-weight: bold;
+}
+
+.light-mode {
+  background-color: white;
+  color: #282c34;
+  transition: all 400ms;
+}
+
+.dark-mode {
+  background-color: #282c34;
+  color: white;
+  transition: all 400ms;
+}
+
+.light-background-image {
+  background-image: url("./images/firemoth-light.png");
+}
+
+.dark-background-image {
+  background-image: url("./images/firemoth-dark.png");
+}
