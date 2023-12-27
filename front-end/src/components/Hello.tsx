@@ -9,7 +9,7 @@ const Hello = ({ mode }: Props) => {
   const [hello, setHello] = useState({ h1: "", h5: "", p: "", email: "" });
 
   useEffect(() => {
-    fetch("http://127.0.0.1:9090/api/information", {
+    fetch("http://127.0.0.1:8000/api/information", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

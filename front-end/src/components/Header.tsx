@@ -12,7 +12,7 @@ const Header = ({ mode, setMode }: Props) => {
   const [links, setLinks] = useState([{ platform: "", href: "" }]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:9090/api/information", {
+    fetch("http://127.0.0.1:8000/api/information", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
