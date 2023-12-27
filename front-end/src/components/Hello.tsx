@@ -6,7 +6,7 @@ interface Props {
 
 const Hello = ({ mode }: Props) => {
   const reverseMode = mode === "light" ? "dark" : "light";
-  const [hello, setHello] = useState({ h1: "", h5: "", p: "" });
+  const [hello, setHello] = useState({ h1: "", h5: "", p: "", email: "" });
 
   useEffect(() => {
     fetch("http://127.0.0.1:9090/api/information", {
@@ -33,7 +33,7 @@ const Hello = ({ mode }: Props) => {
           type="button"
           className={`btn mt-3 btn-${reverseMode}`}
           onClick={() => {
-            window.open("mailto:kinselysia@outlook.com");
+            window.open(`mailto:${hello.email}`);
           }}
         >
           Contact Me
