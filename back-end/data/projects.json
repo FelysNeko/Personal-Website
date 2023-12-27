@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Personal Webpage",
+    "tech": ["react.js", "bootstrap", "typescript", "flask"],
+    "pic": "",
+    "text": "This is a responsive personal website function as my portfolio and linktree. With little prior experience, it took me one week to finish this project from scratch. Special thanks to AutonotionR project by Rosa Jeon, which I used as guideline.",
+    "link": ""
+  },
+  {
+    "title": "Felys Interpreter",
+    "tech": ["c", "makefile"],
+    "pic": "",
+    "text": "Felys is a simple interpreted programming language which support variable, calculation, loops, conditions. There is a finished OOP design as well, but yet to merge to Felys.",
+    "link": "https://github.com/Jhanny-Kin/Felys-Interpreter"
+  },
+  {
+    "title": "Chemistry Calculator",
+    "tech": ["python", "oop"],
+    "pic": "",
+    "text": "Chemistry calculator can do most of high-school-level chemistry problems. You can use it in a website made by Tom Wang, import it as a python package, or execute it in terminal",
+    "link": "https://github.com/Jhanny-Kin/Chemistry-Calculator"
+  }
+]
