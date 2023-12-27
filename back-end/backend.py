@@ -25,7 +25,7 @@ def projects():
         'action' in (data:=request.get_json())
     ) else None
         
-    if action in ['links', 'projects', 'more']:
+    if action in ['links', 'projects', 'more', 'hello']:
         with open(f'data/{action}.json') as file:
             result = json.load(file)
         return jsonify(result), 200

@@ -1,9 +1,24 @@
+import { useState, useEffect } from "react";
+
 interface Props {
   mode: string;
 }
 
 const Hello = ({ mode }: Props) => {
   const reverseMode = mode === "light" ? "dark" : "light";
+  const [hello, setHello] = useState({ h1: "", h5: "", p: "" });
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:9090/api/information", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ action: "hello" }),
+    })
+      .then((response) => response.json())
+      .then((data) => setHello(data));
+  }, []);
 
   return (
     <section
@@ -11,12 +26,9 @@ const Hello = ({ mode }: Props) => {
       style={{ paddingTop: "15rem" }}
     >
       <div className="container-lg">
-        <h1>Welcome to my website</h1>
-        <h5>
-          I am a first-year Computer Engineering student at University of
-          Waterloo, interested in programming languages.
-        </h5>
-        <p>This is the landing website that links all my public information.</p>
+        <h1>{hello.h1}</h1>
+        <h5>{hello.h5}</h5>
+        <p>{hello.p}</p>
         <button
           type="button"
           className={`btn mt-3 btn-${reverseMode}`}

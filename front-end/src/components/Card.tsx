@@ -12,6 +12,7 @@ interface Props {
 }
 
 const Card = ({ mode, info }: Props) => {
+  const reverseMode = mode === "light" ? "dark" : "light";
   const [image, setImage] = useState("");
 
   useEffect(() => {
@@ -29,8 +30,6 @@ const Card = ({ mode, info }: Props) => {
     };
     fetchImage();
   }, [info.pic]);
-
-  const reverseMode = mode === "light" ? "dark" : "light";
 
   return (
     <div
