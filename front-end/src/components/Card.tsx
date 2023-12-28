@@ -17,7 +17,7 @@ const Card = ({ mode, info }: Props) => {
 
   useEffect(() => {
     const fetchImage = async () => {
-      const res = await fetch("http://127.0.0.1:8000/api/image", {
+      const res = await fetch("http://45.77.132.151/api/image", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
