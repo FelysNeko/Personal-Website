@@ -1,29 +1,17 @@
 import ThemeButton from "./ThemeButton";
 import lightLogo from "../images/firemoth-light.png";
 import darkLogo from "../images/firemoth-dark.png";
-import { useEffect, useState } from "react";
 
 interface Props {
   mode: string;
   setMode: (mode: string) => void;
+  data: {
+    platform: string;
+    href: string;
+  }[];
 }
 
-const Header = ({ mode, setMode }: Props) => {
-  const [links, setLinks] = useState([{ platform: "", href: "" }]);
-
-  useEffect(() => {
-    fetch("http://45.77.132.151/api/information", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ action: "links" }),
-    })
-      .then((response) => response.json())
-      .then((data) => setLinks(data))
-      .catch((error) => console.log(error));
-  }, []);
-
+const Header = ({ mode, setMode, data }: Props) => {
   return (
     <nav
       className="navbar fixed-top navbar-expand-lg bg-body-tertiary"
@@ -78,7 +66,7 @@ const Header = ({ mode, setMode }: Props) => {
                 Linktree
               </a>
               <ul className="dropdown-menu">
-                {links.map((each) => (
+                {data.map((each) => (
                   <li key={each.platform}>
                     <a
                       className="dropdown-item"

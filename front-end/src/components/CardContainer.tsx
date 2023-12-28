@@ -1,40 +1,29 @@
 import Card from "./Card";
-import { useState, useEffect } from "react";
 
 interface Props {
   mode: string;
   id: string;
+  data: {
+    title: string;
+    tech: string[];
+    pic: string;
+    text: string;
+    link: string;
+  }[];
 }
 
-const CardContainer = ({ mode, id }: Props) => {
-  const [projects, setProjects] = useState([
-    { title: "", tech: [""], pic: "", text: "", link: "" },
-  ]);
-
-  useEffect(() => {
-    fetch("http://45.77.132.151/api/information", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ action: "projects" }),
-    })
-      .then((response) => response.json())
-      .then((data) => setProjects(data))
-      .catch((error) => console.log(error));
-  }, []);
-
+const CardContainer = ({ mode, id, data }: Props) => {
   return (
     <section className={`${mode}-mode`} id={id}>
       <div className="container-lg">
         <h1>projects</h1>
         <div className="row">
-          {projects.map((each) => (
+          {data.map((each) => (
             <div
               key={each.title}
               className="col-lg-4 d-flex justify-content-center"
             >
-              <Card mode={mode} info={each} />
+              <Card mode={mode} data={each} />
             </div>
           ))}
         </div>

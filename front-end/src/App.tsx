@@ -6,21 +6,40 @@ import CardContainer from "./components/CardContainer";
 import Hello from "./components/Hello";
 import Footer from "./components/Footer";
 import Accordion from "./components/Accordion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const template = {
+  hello: { h1: "", h5: "", p: "", email: "" },
+  projects: [{ title: "", tech: [""], pic: "", text: "", link: "" }],
+  links: [{ platform: "", href: "" }],
+  more: [{ title: "", text: "" }],
+};
 
 function App() {
   const [mode, setMode] = useState("dark");
+  const [data, setData] = useState(template);
+
+  useEffect(() => {
+    fetch("http://45.77.132.151/api/information")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <>
-      <Header mode={mode} setMode={setMode} />
+      {data !== template && (
+        <>
+          <Header mode={mode} setMode={setMode} data={data.links} />
 
-      <section className={`${mode}-mode`} id="home" />
-      <Hello mode={mode} />
-      <CardContainer mode={mode} id="projects" />
-      <Accordion mode={mode} id="more" />
+          <section className={`${mode}-mode`} id="home" />
+          <Hello mode={mode} data={data.hello} />
+          <CardContainer mode={mode} data={data.projects} id="projects" />
+          <Accordion mode={mode} data={data.more} id="more" />
 
-      <Footer mode={mode} />
+          <Footer mode={mode} />
+        </>
+      )}
     </>
   );
 }

@@ -1,0 +1,57 @@
+{
+  "hello": {
+    "h1": "Welcome to my website",
+    "h5": "I am a first-year Computer Engineering student at University of Waterloo, interested in programming languages.",
+    "p": "This is the landing website that links all my public information.",
+    "email": "kinselysia@outlook.com"
+  },
+  "projects": [
+    {
+      "title": "Personal Webpage",
+      "tech": ["react.js", "bootstrap", "typescript", "flask"],
+      "pic": "",
+      "text": "This is a responsive personal website function as my portfolio and linktree. With little prior experience, it took me one week to finish this project from scratch. Special thanks to AutonotionR project by Rosa Jeon, which I used as guideline.",
+      "link": "https://github.com/Jhanny-Kin/Personal-Website"
+    },
+    {
+      "title": "Felys Interpreter",
+      "tech": ["c", "makefile"],
+      "pic": "",
+      "text": "Felys is a simple interpreted programming language which support variable, calculation, loops, conditions. There is a finished OOP design as well, but yet to merge to Felys.",
+      "link": "https://github.com/Jhanny-Kin/Felys-Interpreter"
+    },
+    {
+      "title": "Chemistry Calculator",
+      "tech": ["python", "oop"],
+      "pic": "",
+      "text": "Chemistry calculator can do most of high-school-level chemistry problems. You can use it in a website made by Tom Wang, import it as a python package, or execute it in terminal",
+      "link": "https://github.com/Jhanny-Kin/Chemistry-Calculator"
+    }
+  ],
+  "links": [
+    { "platform": "GitHub", "href": "https://github.com/Jhanny-Kin/" },
+    {
+      "platform": "LinkedIn",
+      "href": "https://www.linkedin.com/in/jonny-jin/"
+    },
+    {
+      "platform": "Instagram",
+      "href": "https://www.instagram.com/jhanny_kin/"
+    },
+    {
+      "platform": "BiliBili",
+      "href": "https://space.bilibili.com/3493272171318077"
+    }
+  ],
+  "more": [
+    {
+      "title": "General information",
+      "text": "My preferred name is Jonny Jin, and you might know me as GalaxyNeko or Jhanny Kin on the Internet."
+    },
+    {
+      "title": "About the images used in this website",
+      "text": "It is the Firemoth logo from Honkai Impact 3rd. The golden version is the 25th-anniversary commemorative badge. However, Firemoth did not last that long, and the world came to an end, so the golden version is never revealed to people. Hence, I used it as the default image for project cards because both of them do not exist."
+    },
+    { "title": "Disclaimer", "text": "See MIT LISENCE." }
+  ]
+}

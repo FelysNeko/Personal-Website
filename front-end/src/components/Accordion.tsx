@@ -1,32 +1,19 @@
-import { useState, useEffect } from "react";
-
 interface Props {
   mode: string;
   id: string;
+  data: {
+    title: string;
+    text: string;
+  }[];
 }
 
-const Accordion = ({ mode, id }: Props) => {
-  const [more, setMore] = useState([{ title: "", text: "" }]);
-
-  useEffect(() => {
-    fetch("http://45.77.132.151/api/information", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ action: "more" }),
-    })
-      .then((response) => response.json())
-      .then((data) => setMore(data))
-      .catch((error) => console.log(error));
-  }, []);
-
+const Accordion = ({ mode, id, data }: Props) => {
   return (
     <section className={`${mode}-mode`} id={id}>
       <div className="container-lg">
         <h1>more information</h1>
         <div className="accordion" id="accordionMore" data-bs-theme={mode}>
-          {more.map((each, index) => (
+          {data.map((each, index) => (
             <div key={index} className="accordion-item">
               <h2 className="accordion-header">
                 <button

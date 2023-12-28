@@ -1,25 +1,15 @@
-import { useState, useEffect } from "react";
-
 interface Props {
   mode: string;
+  data: {
+    h1: string;
+    h5: string;
+    p: string;
+    email: string;
+  };
 }
 
-const Hello = ({ mode }: Props) => {
+const Hello = ({ mode, data }: Props) => {
   const reverseMode = mode === "light" ? "dark" : "light";
-  const [hello, setHello] = useState({ h1: "", h5: "", p: "", email: "" });
-
-  useEffect(() => {
-    fetch("http://45.77.132.151/api/information", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ action: "hello" }),
-    })
-      .then((response) => response.json())
-      .then((data) => setHello(data))
-      .catch((error) => console.log(error));
-  }, []);
 
   return (
     <section
@@ -27,14 +17,14 @@ const Hello = ({ mode }: Props) => {
       style={{ paddingTop: "15rem" }}
     >
       <div className="container-lg">
-        <h1>{hello.h1}</h1>
-        <h5>{hello.h5}</h5>
-        <p>{hello.p}</p>
+        <h1>{data.h1}</h1>
+        <h5>{data.h5}</h5>
+        <p>{data.p}</p>
         <button
           type="button"
           className={`btn mt-3 btn-${reverseMode}`}
           onClick={() => {
-            window.open(`mailto:${hello.email}`);
+            window.open(`mailto:${data.email}`);
           }}
         >
           Contact Me

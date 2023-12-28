@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 interface Props {
   mode: string;
-  info: {
+  data: {
     title: string;
     tech: string[];
     pic: string;
@@ -11,7 +11,7 @@ interface Props {
   };
 }
 
-const Card = ({ mode, info }: Props) => {
+const Card = ({ mode, data }: Props) => {
   const reverseMode = mode === "light" ? "dark" : "light";
   const [image, setImage] = useState("");
 
@@ -22,14 +22,14 @@ const Card = ({ mode, info }: Props) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ filename: info.pic }),
+        body: JSON.stringify({ filename: data.pic }),
       });
       const imageBlob = await res.blob();
       const imageObjectURL = URL.createObjectURL(imageBlob);
       setImage(imageObjectURL);
     };
     fetchImage().catch((error) => console.log(error));
-  }, [info.pic]);
+  }, [data.pic]);
 
   return (
     <div
@@ -40,20 +40,20 @@ const Card = ({ mode, info }: Props) => {
       <img src={image} className="card-img-top" alt="" />
       <div className="card-body">
         <p>
-          {info.tech.map((x) => (
+          {data.tech.map((x) => (
             <span key={x} className={`badge mx-1 text-bg-${reverseMode}`}>
               {x}
             </span>
           ))}
         </p>
-        <h5 className="card-text">{info.title}</h5>
-        <p className="card-text">{info.text}</p>
+        <h5 className="card-text">{data.title}</h5>
+        <p className="card-text">{data.text}</p>
       </div>
       <button
         type="button"
         className={`btn btn-${reverseMode}`}
         onClick={() => {
-          window.open(info.link, "_blank");
+          window.open(data.link, "_blank");
         }}
       >
         repository link
