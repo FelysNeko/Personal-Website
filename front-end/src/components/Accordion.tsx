@@ -32,7 +32,7 @@ const Accordion = ({ mode, id, data }: Props) => {
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordionMore"
               >
-                <div className="accordion-body mx-5">{each.text}</div>
+                <div className="accordion-body mx-3">{each.text}</div>
               </div>
             </div>
           ))}

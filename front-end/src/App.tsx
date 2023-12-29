@@ -16,11 +16,11 @@ const template = {
 };
 
 function App() {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   const [data, setData] = useState(template);
 
   useEffect(() => {
-    fetch("http://45.77.132.151/api/information")
+    fetch("http://galaxyneko.website/api/information")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));

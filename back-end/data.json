@@ -24,7 +24,7 @@
       "title": "Chemistry Calculator",
       "tech": ["python", "oop"],
       "pic": "",
-      "text": "Chemistry calculator can do most of high-school-level chemistry problems. You can use it in a website made by Tom Wang, import it as a python package, or execute it in terminal",
+      "text": "Chemistry calculator can do most of high-school-level chemistry problems. You can use it in a website made by Tom Wang, import it as a python package, or execute it in terminal.",
       "link": "https://github.com/Jhanny-Kin/Chemistry-Calculator"
     }
   ],
@@ -49,9 +49,13 @@
       "text": "My preferred name is Jonny Jin, and you might know me as GalaxyNeko or Jhanny Kin on the Internet."
     },
     {
-      "title": "About the images used in this website",
-      "text": "It is the Firemoth logo from Honkai Impact 3rd. The golden version is the 25th-anniversary commemorative badge. However, Firemoth did not last that long, and the world came to an end, so the golden version is never revealed to people. Hence, I used it as the default image for project cards because both of them do not exist."
+      "title": "Hobbies and interests",
+      "text": "For outdoor activities, I play frisbee and baseball, though I haven't played them for a long time due to heavy workload. Other than that, I spend most of time watching anime, playing guitar (anime song only), and coding."
     },
-    { "title": "Disclaimer", "text": "See MIT LISENCE." }
+    {
+      "title": "Images used in this website",
+      "text": "These are the Firemoth logos from Honkai Impact 3rd. The golden version is the 25th-anniversary commemorative badge. However, Firemoth did not last that long, and the world came to an end, so the golden version is never revealed to the public. Hence, I used it as the default image for project cards because both of them do not exist."
+    },
+    { "title": "Disclaimer", "text": "See MIT LISENCE" }
   ]
 }
