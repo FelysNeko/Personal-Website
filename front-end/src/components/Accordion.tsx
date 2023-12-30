@@ -24,7 +24,7 @@ const Accordion = ({ mode, id, data }: Props) => {
                   aria-expanded="false"
                   aria-controls={`collapse${index}`}
                 >
-                  <span className="ms-2">{each.title}</span>
+                  <span className="ms-1">{each.title}</span>
                 </button>
               </h2>
               <div
