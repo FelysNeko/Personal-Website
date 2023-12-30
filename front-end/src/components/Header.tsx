@@ -43,7 +43,7 @@ const Header = ({ mode, setMode, data }: Props) => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
-                className="nav-link active text-end"
+                className="nav-link active"
                 aria-current="page"
                 href="#projects"
               >
@@ -52,7 +52,7 @@ const Header = ({ mode, setMode, data }: Props) => {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link active text-end"
+                className="nav-link active"
                 aria-current="page"
                 href="#more"
               >
@@ -61,7 +61,7 @@ const Header = ({ mode, setMode, data }: Props) => {
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle text-end"
+                className="nav-link dropdown-toggle"
                 href="/"
                 role="button"
                 data-bs-toggle="dropdown"
