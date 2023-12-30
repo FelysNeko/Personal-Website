@@ -11,21 +11,21 @@
       "tech": ["react.js", "bootstrap", "typescript"],
       "pic": "",
       "text": "This is a responsive personal website function as my portfolio and linktree, which is also my first real website. Special thanks to AutonotionR project, which I used as guideline.",
-      "link": "https://github.com/Jhanny-Kin/Personal-Website"
+      "link": "https://github.com/FelysNeko/Personal-Website"
     },
     {
       "title": "Felys Interpreter",
       "tech": ["c", "makefile"],
       "pic": "",
       "text": "Felys is a simple interpreted programming language which support variable, calculation, loops, conditions. There is a finished OOP design as well, but yet to merge to Felys.",
-      "link": "https://github.com/Jhanny-Kin/Felys-Interpreter"
+      "link": "https://github.com/FelysNeko/Felys-Interpreter"
     },
     {
       "title": "Chemistry Calculator",
       "tech": ["python", "oop"],
       "pic": "",
       "text": "Chemistry calculator can do most of high-school-level chemistry problems. You can use it in a website made by my friend, import it as a python package, or execute it in terminal.",
-      "link": "https://github.com/Jhanny-Kin/Chemistry-Calculator"
+      "link": "https://github.com/FelysNeko/Chemistry-Calculator"
     }
   ],
   "links": [
@@ -35,10 +35,10 @@
     },
     {
       "platform": "GitHub: code repository",
-      "href": "https://github.com/Jhanny-Kin/"
+      "href": "https://github.com/FelysNeko"
     },
     {
-      "platform": "Instagram: photo collection",
+      "platform": "Instagram: photo gallary",
       "href": "https://www.instagram.com/jhanny_kin/"
     },
     {
