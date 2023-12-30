@@ -40,9 +40,9 @@
 section {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-position: 95%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-position: 95% top;
   background-size: contain;
   background-repeat: no-repeat;
 }

@@ -39,11 +39,11 @@ const Header = ({ mode, setMode, data }: Props) => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse mx-2" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
-                className="nav-link active"
+                className="nav-link active text-end"
                 aria-current="page"
                 href="#projects"
               >
@@ -51,13 +51,17 @@ const Header = ({ mode, setMode, data }: Props) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#more">
+              <a
+                className="nav-link active text-end"
+                aria-current="page"
+                href="#more"
+              >
                 More
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle text-end"
                 href="/"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -81,8 +85,8 @@ const Header = ({ mode, setMode, data }: Props) => {
               </ul>
             </li>
           </ul>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+          <ul className="navbar-nav">
+            <li className="nav-item text-end">
               <ThemeButton mode={mode} setMode={setMode} />
             </li>
           </ul>
