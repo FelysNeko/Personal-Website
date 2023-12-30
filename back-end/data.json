@@ -7,10 +7,10 @@
   },
   "projects": [
     {
-      "title": "Personal Webpage",
-      "tech": ["react.js", "bootstrap", "typescript", "flask"],
+      "title": "Personal Website",
+      "tech": ["react.js", "bootstrap", "typescript"],
       "pic": "",
-      "text": "This is a responsive personal website function as my portfolio and linktree. With little prior experience, it took me one week to finish this project from scratch. Special thanks to AutonotionR project, which I used as guideline.",
+      "text": "This is a responsive personal website function as my portfolio and linktree, which is also my first real website. Special thanks to AutonotionR project, which I used as guideline.",
       "link": "https://github.com/Jhanny-Kin/Personal-Website"
     },
     {
@@ -29,32 +29,44 @@
     }
   ],
   "links": [
-    { "platform": "GitHub", "href": "https://github.com/Jhanny-Kin/" },
     {
-      "platform": "LinkedIn",
+      "platform": "LinkedIn: profile",
       "href": "https://www.linkedin.com/in/jonny-jin/"
     },
     {
-      "platform": "Instagram",
+      "platform": "GitHub: code repository",
+      "href": "https://github.com/Jhanny-Kin/"
+    },
+    {
+      "platform": "Instagram: photo collection",
       "href": "https://www.instagram.com/jhanny_kin/"
     },
     {
-      "platform": "BiliBili",
+      "platform": "BiliBili(CN): blog posting",
       "href": "https://space.bilibili.com/3493272171318077"
     }
   ],
   "more": [
     {
       "title": "General information",
-      "text": "My preferred name is Jonny Jin, and you might know me as GalaxyNeko or Jhanny Kin on the Internet."
+      "text": "My preferred name is Jonny Jin, and you might know me as FelysNeko or Jhanny Kin on the Internet."
     },
     {
-      "title": "Hobbies and interests",
-      "text": "For outdoor activities, I play frisbee and baseball, though I haven't played them for a long time due to heavy workload. Other than that, I spend most of time watching anime, playing guitar (anime song only), and coding."
+      "title": "Why the name FelysNeko",
+      "text": "The term Felys is the combination of two names: Pardofelis and Elysia (from Honkai Impact 3rd), and Neko means cat."
     },
     {
       "title": "Images used in this website",
-      "text": "These are the Firemoth logos from Honkai Impact 3rd. The golden version is the 25th-anniversary commemorative badge. However, Firemoth did not last that long, and the world came to an end, so the golden version is never revealed to the public. Hence, I used it as the default image for project cards because both of them do not exist."
+      "text": "These are the Firemoth logos (from Honkai Impact 3rd). The golden version is the 25th-anniversary commemorative badge. However, Firemoth did not last that long, and the world came to an end, so the golden version is never revealed to the public. Hence, I used it as the default image for project cards because both of them do not exist."
+    },
+
+    {
+      "title": "Everything about my tech stack",
+      "text": "I started with Python a few years ago and am proficient in Python (OOP development, webcrawler, data analysis, image processing, machine learning, backend, etc). In order to gain a deeper understanding in Python, I learned C and became really interested in building programming languages. I also taught myself CentOS for server maintenance and Kali Linux for hacking knowledge. (RHEL and GNU/Linux are pretty different, so it took me a long time to get comfortable with both of them). Then, I came to the university and quickly realized that my tech stack was too wired and incomplete to find a co-op. Therefore, I started to learn C++ (ECE150) and web development skills like React.js and Typescript."
+    },
+    {
+      "title": "Personal hobbies and interests",
+      "text": "As for outdoor activities, I play frisbee and baseball, though I haven't played them for a long time due to heavy workload. Other than that, I spend most of time watching anime, playing guitar (anime song only), and coding."
     },
     { "title": "Disclaimer", "text": "See MIT LISENCE" }
   ]
