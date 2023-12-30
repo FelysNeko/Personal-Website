@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import image from "../images/firemoth-gold.png"
 
 interface Props {
   mode: string;
@@ -13,23 +13,6 @@ interface Props {
 
 const Card = ({ mode, data }: Props) => {
   const reverseMode = mode === "light" ? "dark" : "light";
-  const [image, setImage] = useState("");
-
-  useEffect(() => {
-    const fetchImage = async () => {
-      const res = await fetch("http://galaxyneko.website/api/image", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ filename: data.pic }),
-      });
-      const imageBlob = await res.blob();
-      const imageObjectURL = URL.createObjectURL(imageBlob);
-      setImage(imageObjectURL);
-    };
-    fetchImage().catch((error) => console.log(error));
-  }, [data.pic]);
 
   return (
     <div
