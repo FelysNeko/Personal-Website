@@ -20,7 +20,7 @@ function App() {
   const [data, setData] = useState(template);
 
   useEffect(() => {
-    fetch("http://35.182.254.174/api/information")
+    fetch("http://galaxyneko.website/api/information")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
