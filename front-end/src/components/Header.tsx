@@ -25,7 +25,7 @@ const Header = ({ mode, setMode, data }: Props) => {
             alt="Elysia"
             height="40"
           />
-          GalaxyNeko
+          FelysNeko
         </a>
         <button
           className="navbar-toggler"

@@ -17,7 +17,7 @@ const Card = ({ mode, data }: Props) => {
 
   useEffect(() => {
     const fetchImage = async () => {
-      const res = await fetch("http://galaxyneko.website/api/image", {
+      const res = await fetch("http://35.182.254.174/api/image", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
