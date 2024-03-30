@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { PROJECT } from "@/constant";
+import { PROJECT } from "@/constant/en";
 
 const Project = () => {
   return (

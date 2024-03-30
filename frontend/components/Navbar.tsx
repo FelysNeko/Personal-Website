@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { NAVIGATION } from "@/constant";
+import { NAVIGATION } from "@/constant/en";
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed z-[1] bg-base-100">
+    <div className="navbar fixed z-[2] bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

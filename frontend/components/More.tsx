@@ -1,4 +1,4 @@
-import { MORE } from "@/constant";
+import { MORE } from "@/constant/en";
 
 const More = () => {
   return (

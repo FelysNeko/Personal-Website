@@ -1,4 +1,4 @@
-import { EXPERIENCE } from "@/constant";
+import { EXPERIENCE } from "@/constant/en";
 
 const Experience = () => {
   return (

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LINKREE } from "@/constant";
+import { LINKREE } from "@/constant/en";
 
 const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-base-200 text-neutral-content">
       <aside className="items-center grid-flow-col">
-        <p>Maintained by FelysNeko</p>
+        <p className="mx-2">Maintained by FelysNeko</p>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {LINKREE.map((each, i) => (

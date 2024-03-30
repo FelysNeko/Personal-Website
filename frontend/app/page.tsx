@@ -13,7 +13,6 @@ const Home = () => {
       <Project />
       <section id="more" className="h-20" />
       <More />
-      <section className="h-20" />
     </>
   );
 };

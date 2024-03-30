@@ -7,6 +7,7 @@ export const NAVIGATION = [
 export const LINKREE = [
   { icon: "/icon/linkedin.svg", href: "https://www.linkedin.com/in/jonny-jin" },
   { icon: "/icon/github.svg", href: "https://github.com/FelysNeko" },
+  { icon: "/icon/instagram.svg", href: "https://www.instagram.com/jhanny_kin" },
 ];
 
 export const EXPERIENCE = [
