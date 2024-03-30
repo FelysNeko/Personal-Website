@@ -2,7 +2,7 @@ import { EXPERIENCE } from "@/constant";
 
 const Experience = () => {
   return (
-    <div className="my-6 mx-4 lg:mx-12" id="experience">
+    <div className="min-h-screen mx-4 lg:mx-12">
       <h1 className="text-3xl font-bold mb-4">EXPERIENCE</h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {EXPERIENCE.map((each, i) => (
@@ -28,7 +28,7 @@ const Experience = () => {
               }`}
             >
               <time className="italic">{each.time}</time>
-              <h1 className="text-xl font-black">{each.title}</h1>
+              <h1 className="text-xl font-black text-elypink">{each.title}</h1>
               <h5 className="text-xs">{each.employer}</h5>
               <p className="my-2">{each.about}</p>
               {each.skills.map((s, i) => (

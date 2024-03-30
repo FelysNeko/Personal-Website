@@ -6,9 +6,12 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: { colors: { elypink: "#ffc6f5" } },
+  },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ['black'],
+    themes: ["black"],
   },
 };
 export default config;

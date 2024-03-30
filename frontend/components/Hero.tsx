@@ -13,7 +13,7 @@ const Hero = () => {
             style={{ objectFit: "contain" }}
             fill
           />
-          <em className="absolute bottom-0 end-0 text-xs opacity-40">
+          <em className="absolute bottom-0 end-0 text-xs opacity-40 text-elypink">
             Image from Honkai Impact 3rd
           </em>
         </div>
@@ -30,15 +30,10 @@ const Hero = () => {
               href="mailto:kinselysia@outlook.com"
               className="btn btn-primary me-4"
             >
-              EMAIL ME
+              CONTACT ME
             </Link>
             {LINKREE.map((each, i) => (
-              <Link
-                key={i}
-                href={each.href}
-                className="mx-1"
-                target="_blank"
-              >
+              <Link key={i} href={each.href} className="mx-1" target="_blank">
                 <Image src={each.icon} alt="" width={28} height={28} />
               </Link>
             ))}

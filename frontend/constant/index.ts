@@ -17,8 +17,8 @@ export const EXPERIENCE = [
     about:
       "Designed and implemented website backend and admin dashboard, participated in frontend development, dockerized frontend and backend, and deployed them on cloud with loading balancing and auto-scaling ability.",
     skills: [
-      "python",
       "flask",
+      "sqlalchemy",
       "nginx",
       "postgresql",
       "next.js",
