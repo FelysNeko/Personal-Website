@@ -1,7 +1,7 @@
 export const NAVIGATION = [
-  { key: "Experience", href: "/" },
-  { key: "Project", href: "/" },
-  { key: "FAQ", href: "/" },
+  { key: "Experience", href: "#experience" },
+  { key: "Project", href: "#project" },
+  { key: "FAQ", href: "#faq" },
 ];
 
 export const LINKREE = [
