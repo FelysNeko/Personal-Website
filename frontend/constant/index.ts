@@ -39,3 +39,38 @@ export const EXPERIENCE = [
     skills: ["tutoring", "python"],
   },
 ];
+
+export const PROJECT = [
+  {
+    image: "/firemoth-light.png",
+    title: "Felys Interpreter",
+    skills: ["C", "Rust", "Makefile"],
+    about:
+      "Wrote a AST parser and a simple interpretered programming language which can do basic expression evaluation and logical operation.",
+    github: "https://github.com/FelysNeko/Felys-Interpreter",
+  },
+  {
+    image: "/firemoth-light.png",
+    title: "Personal Website",
+    skills: ["next.js", "typescript", "tailwindcss"],
+    about:
+      "Made a static landing website as my portfolio page that support two languages.",
+    github: "https://github.com/FelysNeko/Personal-Website",
+  },
+  {
+    image: "/firemoth-light.png",
+    title: "Chemistry Calculator",
+    skills: ["python", "flask"],
+    about:
+      "Created a python package that can do high school chemistry problems, and build cli tool and website based on it.",
+    github: "https://github.com/FelysNeko/Chemistry-Calculator",
+  },
+  {
+    image: "/firemoth-light.png",
+    title: "BiliBili Community Suite",
+    skills: ["bs4", "scikit-learn", "pandas"],
+    about:
+      "Provide tools to fetch data from BiliBili, and trained a bag-of-word model to filter and report comments against community rules with 90% success rate.",
+    github: "https://github.com/FelysNeko/BiliBili-Community-Suite",
+  },
+];
