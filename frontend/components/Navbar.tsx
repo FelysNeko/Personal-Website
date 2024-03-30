@@ -1,6 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar fixed bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,28 +27,38 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Project</a>
+              <Link href="/">Project</Link>
             </li>
             <li>
-              <a>Experience</a>
+              <Link href="/">Experience</Link>
             </li>
             <li>
-              <a>FAQ</a>
+              <Link href="/">FAQ</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">FelysNeko</a>
+        <Link href="/" className="h-12 flex items-center space-x-1 mx-2">
+          <div className="w-12 h-full relative">
+            <Image
+              src="/firemoth-light.png"
+              alt=""
+              style={{ objectFit: "contain" }}
+              fill
+            />
+          </div>
+          <h1 className="text-xl">FelysNeko</h1>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Project</a>
+            <Link href="/">Project</Link>
           </li>
           <li>
-            <a>Experience</a>
+            <Link href="/">Experience</Link>
           </li>
           <li>
-            <a>FAQ</a>
+            <Link href="/">FAQ</Link>
           </li>
         </ul>
       </div>
