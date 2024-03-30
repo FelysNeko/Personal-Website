@@ -21,7 +21,7 @@ const Hero = () => {
           <h1 className="text-5xl font-bold">FelysNeko</h1>
           <p className="py-6">
             Welcome to my landing page. I&apos;m an undergraduate student at the
-            University of Waterloo. I do full stack web development and
+            University of Waterloo. I do full-stack web development and
             interested in building programming languages. Feel free to reach out
             to me if you have any interesting project.
           </p>
