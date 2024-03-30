@@ -1,7 +1,7 @@
 export const NAVIGATION = [
   { key: "Experience", href: "#experience" },
   { key: "Project", href: "#project" },
-  { key: "FAQ", href: "#faq" },
+  { key: "More", href: "#more" },
 ];
 
 export const LINKREE = [
@@ -72,5 +72,27 @@ export const PROJECT = [
     about:
       "Provide tools to fetch data from BiliBili, and trained a bag-of-word model to filter and report comments against community rules with 90% success rate.",
     github: "https://github.com/FelysNeko/BiliBili-Community-Suite",
+  },
+];
+
+export const MORE = [
+  {
+    topic: "General Information",
+    response:
+      "My preferred name is Jonny Jin, and you might know me as FelysNeko or Jhanny Kin on the Internet. By the way, Felys is the combination of two names: Pardofelis and Elysia from Honkai Impact 3rd, and Neko means cat.",
+  },
+  {
+    topic: "Hobbies and Interests",
+    response:
+      "In general, I enjoy and only enjoy things related to ACGN. The only two exceptions are frisbee and coding. Elysia is my only waifu, and Honkai series are my favourite games. Evangelion is my favourite anime, and Asuka is my favourite one.",
+  },
+  {
+    topic: "Tech Stack",
+    response:
+      "I know Python and C the best, and am currently learning Rust, because I want to do lower level development like programming language or operating system in the future. Although I can also do full stack web development, it's not my favourite path, so I won't get too deep into it.",
+  },
+  {
+    topic: "Disclaimer",
+    response: "See MIT LISENCE.",
   },
 ];

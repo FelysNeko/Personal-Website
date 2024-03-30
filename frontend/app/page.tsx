@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import More from "@/components/More";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
 
@@ -10,7 +11,9 @@ const Home = () => {
       <Experience />
       <section id="project" className="h-20" />
       <Project />
-      <section id="faq" className="h-20" />
+      <section id="more" className="h-20" />
+      <More />
+      <section className="h-20" />
     </>
   );
 };
