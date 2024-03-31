@@ -8,7 +8,7 @@ interface Props {
 const ChangeLangBtn = ({ currentLang }: Props) => {
   return (
     <button
-      className="btn"
+      className="btn me-3"
       onClick={() => setLangCookie(currentLang === "en" ? "cn" : "en")}
     >
       {(currentLang === "en" ? "cn" : "en").toUpperCase()}
