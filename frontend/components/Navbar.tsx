@@ -7,7 +7,7 @@ import { cookies } from "next/headers";
 
 const Navbar = () => {
   const currentLang = cookies().get("lang")?.value;
-  const navigation = currentLang === "en" ? EN : CN;
+  const navigation = currentLang === "cn" ? CN : EN;
 
   return (
     <div className="navbar fixed z-[2] bg-base-100">
@@ -50,7 +50,7 @@ const Navbar = () => {
             />
           </div>
           <h1 className="text-xl w-28">
-            {currentLang === "en" ? "FelysNeko" : "银河猫猫侠"}
+            {currentLang === "cn" ? "银河猫猫侠" : "FelysNeko"}
           </h1>
         </Link>
       </div>

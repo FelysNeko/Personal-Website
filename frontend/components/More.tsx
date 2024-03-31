@@ -4,12 +4,12 @@ import { MORE as CN } from "@/constant/cn";
 
 const More = () => {
   const currentLang = cookies().get("lang")?.value;
-  const more = currentLang === "en" ? EN : CN;
+  const more = currentLang === "cn" ? CN : EN;
 
   return (
     <div className="min-h-screen mx-4 lg:mx-12 flex flex-col place-items-center">
       <h1 className="text-3xl font-bold mb-4">
-        {currentLang === "en" ? "MORE" : "更多"}
+        {currentLang === "cn" ? "更多" : "MORE"}
       </h1>
       {more.map((each, i) => (
         <div

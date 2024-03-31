@@ -4,12 +4,12 @@ import { EXPERIENCE as CN } from "@/constant/cn";
 
 const Experience = () => {
   const currentLang = cookies().get("lang")?.value;
-  const experience = currentLang === "en" ? EN : CN;
+  const experience = currentLang === "cn" ? CN : EN;
 
   return (
     <div className="min-h-screen mx-4 lg:mx-12">
       <h1 className="text-3xl font-bold mb-4">
-        {currentLang === "en" ? "EXPERIENCE" : "经历"}
+        {currentLang === "cn" ? "经历" : "EXPERIENCE"}
       </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {experience.map((each, i) => (

@@ -6,12 +6,12 @@ import { PROJECT as CN } from "@/constant/cn";
 
 const Project = () => {
   const currentLang = cookies().get("lang")?.value;
-  const project = currentLang === "en" ? EN : CN;
+  const project = currentLang  === "cn" ? CN : EN;
 
   return (
     <div className="min-h-screen mx-4 lg:mx-12">
       <h1 className="text-3xl font-bold mb-4">
-        {currentLang === "en" ? "PROJECT" : "项目"}
+        {currentLang === "cn" ? "项目" : "PROJECT"}
       </h1>
       <div className="grid xl:grid-cols-2 gap-6">
         {project.map((each, i) => (
