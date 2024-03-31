@@ -48,7 +48,7 @@ export const PROJECT = [
     skills: ["C", "Rust", "Makefile"],
     about:
       "制作了一款AST解析器和一个简易的编程语言，可以做到基本的计算和逻辑运算",
-    github: "https://github.com/FelysNeko/Felys-Interpreter",
+    github: "https://github.com/FelysNeko/S-Expression-Converter",
   },
   {
     image: "/firemoth-light.png",

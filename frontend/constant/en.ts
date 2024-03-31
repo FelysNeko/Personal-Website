@@ -48,7 +48,7 @@ export const PROJECT = [
     skills: ["C", "Rust", "Makefile"],
     about:
       "Wrote a AST parser and a simple interpretered programming language which can do basic expression evaluation and logical operation.",
-    github: "https://github.com/FelysNeko/Felys-Interpreter",
+    github: "https://github.com/FelysNeko/S-Expression-Converter",
   },
   {
     image: "/firemoth-light.png",
