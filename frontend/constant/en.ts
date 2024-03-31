@@ -85,7 +85,7 @@ export const MORE = [
   {
     topic: "Hobbies and Interests",
     response:
-      "In general, I enjoy and only enjoy things related to ACGN. The only two exceptions are frisbee and coding. Elysia is my only waifu, and Honkai series are my favourite games. Evangelion is my favourite anime, and Asuka is my favourite one.",
+      "In general, I enjoy and only enjoy things related to ACGN. The only two exceptions are frisbee and coding. Elysia is my only waifu, and Honkai series are my favourite games. Evangelion is my favourite anime, and Asuka is my favourite character.",
   },
   {
     topic: "Tech Stack",
@@ -93,7 +93,12 @@ export const MORE = [
       "I know Python and C the best, and am currently learning Rust, because I want to do lower level development like programming language or operating system in the future. Although I can also do full stack web development, it's not my favourite path, so I won't get too deep into it.",
   },
   {
-    topic: "Disclaimer",
+    topic: "Special Thanks",
+    response:
+      "Special thanks to the open source project AutonotionR by CuriousR82, another uWaterloo underguadate, as it helped me get into modern web development from a newbee in only one week.",
+  },
+  {
+    topic: "Lisence",
     response: "See MIT LISENCE.",
   },
 ];

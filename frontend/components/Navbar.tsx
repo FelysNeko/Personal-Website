@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { NAVIGATION } from "@/constant/en";
+import ChangeLangBtn from "@/components/client/ChangeLangBtn";
+import { NAVIGATION as EN } from "@/constant/en";
+import { NAVIGATION as CN } from "@/constant/cn";
+import { cookies } from "next/headers";
 
 const Navbar = () => {
+  const currentLang = cookies().get("lang")?.value;
+  const navigation = currentLang === "en" ? EN : CN;
+
   return (
     <div className="navbar fixed z-[2] bg-base-100">
       <div className="navbar-start">
@@ -27,7 +33,7 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            {NAVIGATION.map((each) => (
+            {navigation.map((each) => (
               <li key={each.key}>
                 <Link href={each.href}>{each.key}</Link>
               </li>
@@ -43,12 +49,14 @@ const Navbar = () => {
               fill
             />
           </div>
-          <h1 className="text-xl">FelysNeko</h1>
+          <h1 className="text-xl w-28">
+            {currentLang === "en" ? "FelysNeko" : "银河猫猫侠"}
+          </h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {NAVIGATION.map((each) => (
+          {navigation.map((each) => (
             <li key={each.key}>
               <Link href={each.href}>{each.key}</Link>
             </li>
@@ -56,7 +64,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">CN</a>
+        <ChangeLangBtn currentLang={currentLang || "en"} />
       </div>
     </div>
   );

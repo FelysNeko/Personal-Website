@@ -1,11 +1,18 @@
-import { EXPERIENCE } from "@/constant/en";
+import { cookies } from "next/headers";
+import { EXPERIENCE as EN } from "@/constant/en";
+import { EXPERIENCE as CN } from "@/constant/cn";
 
 const Experience = () => {
+  const currentLang = cookies().get("lang")?.value;
+  const experience = currentLang === "en" ? EN : CN;
+
   return (
     <div className="min-h-screen mx-4 lg:mx-12">
-      <h1 className="text-3xl font-bold mb-4">EXPERIENCE</h1>
+      <h1 className="text-3xl font-bold mb-4">
+        {currentLang === "en" ? "EXPERIENCE" : "经历"}
+      </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        {EXPERIENCE.map((each, i) => (
+        {experience.map((each, i) => (
           <li key={i}>
             <hr />
             <div className="timeline-middle">
