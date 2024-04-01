@@ -44,11 +44,11 @@ export const EXPERIENCE = [
 export const PROJECT = [
   {
     image: "/firemoth-light.png",
-    title: "Felys Interpreter",
+    title: "Felys Project",
     skills: ["C", "Rust", "Makefile"],
     about:
       "Wrote a AST parser and a simple interpretered programming language which can do basic expression evaluation and logical operation.",
-    github: "https://github.com/FelysNeko/S-Expression-Converter",
+    github: "https://github.com/FelysNeko/Felys-Project",
   },
   {
     image: "/firemoth-light.png",

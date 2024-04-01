@@ -44,11 +44,11 @@ export const EXPERIENCE = [
 export const PROJECT = [
   {
     image: "/firemoth-light.png",
-    title: "Felys解释器项目",
+    title: "Felys项目",
     skills: ["C", "Rust", "Makefile"],
     about:
       "制作了一款AST解析器和一个简易的编程语言，可以做到基本的计算和逻辑运算",
-    github: "https://github.com/FelysNeko/S-Expression-Converter",
+    github: "https://github.com/FelysNeko/Felys-Project",
   },
   {
     image: "/firemoth-light.png",
