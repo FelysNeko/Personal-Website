@@ -16,7 +16,7 @@ const Project = () => {
       <div className="grid xl:grid-cols-2 gap-6">
         {project.map((each, i) => (
           <div
-            className="card sm:card-side bg-base-100 shadow-xl shadow-elypink/10"
+            className="card sm:card-side bg-base-100 shadow-lg shadow-elypink/10"
             key={i}
           >
             <figure className="h-40 sm:h-80 sm:w-1/3 relative">

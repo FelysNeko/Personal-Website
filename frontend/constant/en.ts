@@ -14,7 +14,7 @@ export const EXPERIENCE = [
   {
     time: "Jan 2024 - Apr 2024",
     title: "Full-Stack Developer",
-    employer: "GroovEver",
+    employer: "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
     about:
       "Designed and implemented website backend and admin dashboard, participated in frontend development, dockerized frontend and backend, and deployed them on cloud with loading balancing and auto-scaling ability.",
     skills: [

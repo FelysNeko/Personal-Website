@@ -14,9 +14,9 @@ export const EXPERIENCE = [
   {
     time: "2024/01 - 2024/04",
     title: "全栈开发",
-    employer: "GroovEver",
+    employer: "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
     about:
-      "设计并实现网站后端和管理仪表板，深度参与前端开发，将前端和后端容器化，并且最终将其部署在具在云服务上，支持负载平衡和弹性伸缩。",
+      "设计并实现网站后端和管理仪表板，深度参与前端开发，将前端和后端容器化打包，并且最终将其部署在具在云服务上，支持负载平衡和弹性伸缩。",
     skills: [
       "flask",
       "sqlalchemy",
@@ -84,7 +84,7 @@ export const MORE = [
   {
     topic: "兴趣爱好",
     response:
-      "以普遍理性而言，我还是偏好于二次元的世界，唯二的例外是敲代码和打盘。最喜欢崩坏这个IP，单推爱莉，同时也是EVA厨，个人比较喜欢明日香。",
+      "以普遍理性而言，个人偏好于二次元的世界，唯二的例外是敲代码和打盘。最喜欢崩坏这个IP，单推爱莉，同时也是EVA厨，比较喜欢明日香。",
   },
   {
     topic: "技术栈",
