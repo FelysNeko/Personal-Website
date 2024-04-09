@@ -9,4 +9,5 @@ edition = "2021"
 colored = "2.1.0"
 axum = "0.7.5"
 tokio = { version = "1.37.0", features = ["full"] }
-serde = { version = "1.0.197", features = ["derive"]}
+serde = { version = "1.0.197", features = ["derive"] }
+tower-http = { version = "0.5.2", features = ["cors"] }

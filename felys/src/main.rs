@@ -14,13 +14,14 @@ use axum::{
     Json, Router,
 };
 use serde::{Serialize, Deserialize};
-
+use tower_http::cors::CorsLayer;
 
 #[tokio::main]
 async fn main() {
     let app = Router::new()
         .route("/", get(root))
-        .route("/run", post(run));
+        .route("/run", post(run))
+        .layer(CorsLayer::permissive());
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
     axum::serve(listener, app).await.unwrap();
