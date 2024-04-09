@@ -29,19 +29,21 @@ const CodeExecArea = ({ lang }: Props) => {
   };
 
   return (
-    <form className="m-2" onSubmit={handleExecute}>
-      <em className="mx-2">{lang === "cn" ? "输入" : "Input"}</em>
-      <code>
-        <textarea
-          className="textarea w-full h-96 resize-none border border-neutral-800 text-lg m-1"
-          name="code"
-        />
-      </code>
-      <em className="mx-2">{lang === "cn" ? "输出" : "Output"}</em>
-      <div className="w-full h-24 border border-neutral-800 m-1 overflow-auto">
+    <form className="m-2 space-y-2" onSubmit={handleExecute}>
+      <em>{lang === "cn" ? "输入" : "Input"}</em>
+      <div>
+        <code>
+          <textarea
+            className="textarea w-full h-96 resize-none border border-neutral-800 text-lg"
+            name="code"
+          />
+        </code>
+      </div>
+      <em>{lang === "cn" ? "输出" : "Output"}</em>
+      <div className="w-full h-24 border border-neutral-800 overflow-auto">
         <pre className="m-2">{result}</pre>
       </div>
-      <button className="btn w-full m-1">
+      <button className="btn w-full">
         {lang === "cn" ? "运行" : "EXECUTE"}
       </button>
     </form>

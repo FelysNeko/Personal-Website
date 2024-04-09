@@ -42,6 +42,7 @@ const Felys = () => {
           </div>
         </div>
       </div>
+      <section className="h-10" />
     </>
   );
 };
