@@ -1,7 +1,8 @@
 export const NAVIGATION = [
-  { key: "经历", href: "#experience" },
-  { key: "项目", href: "#project" },
-  { key: "更多", href: "#more" },
+  { key: "经历", href: "/#experience" },
+  { key: "项目", href: "/#project" },
+  { key: "更多", href: "/#more" },
+  { key: "FELYS", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -14,7 +15,8 @@ export const EXPERIENCE = [
   {
     time: "2024/01 - 2024/04",
     title: "全栈开发",
-    employer: "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
+    employer:
+      "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
     about:
       "设计并实现网站后端和管理仪表板，深度参与前端开发，将前端和后端容器化打包，并且最终将其部署在具在云服务上，支持负载平衡和弹性伸缩。",
     skills: [
@@ -101,3 +103,20 @@ export const MORE = [
     response: "参考MIT LISENCE。",
   },
 ];
+
+export const FELYS = {
+  类型: [
+    "字符串：'爱莉希雅' | \"爱莉希雅\"",
+    "整型：42（仅支持到Rust isize大小）",
+    "布尔值：true | false",
+  ],
+  变量: ["赋值：x = y = z = '单推爱莉希雅'"],
+  运算: [
+    "括号：(a)",
+    "四则：a+b，a-b，a*b，a/b，a%b",
+    "比较：a>b，a>=b，a==b，a!=b，a<=b，a<=b，a>b",
+    "逻辑：a&&b，a||b",
+    "一元：+a，-a，!a",
+    "可以使用+来合并字符串",
+  ],
+};

@@ -91,7 +91,7 @@ impl Msg {
     
     pub fn nothing_to_parse(lxr:&Lexer) -> String {
         let mut space = String::new();
-        for _ in 0..lxr.input.len()+1 {
+        for _ in 0..lxr.input.len() {
             space.push(' ');
         }
         format!(

@@ -46,7 +46,7 @@ async fn run(
                 let result = Result {
                     result: b,
                 };
-                return (StatusCode::BAD_REQUEST, Json(result));
+                return (StatusCode::OK, Json(result));
             }
         };
 
@@ -56,7 +56,7 @@ async fn run(
                 let result = Result {
                     result: b,
                 };
-                return (StatusCode::BAD_REQUEST, Json(result));
+                return (StatusCode::OK, Json(result));
             }
         };
 

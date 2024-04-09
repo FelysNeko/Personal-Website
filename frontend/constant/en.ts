@@ -1,7 +1,8 @@
 export const NAVIGATION = [
-  { key: "Experience", href: "#experience" },
-  { key: "Project", href: "#project" },
-  { key: "More", href: "#more" },
+  { key: "Experience", href: "/#experience" },
+  { key: "Project", href: "/#project" },
+  { key: "More", href: "/#more" },
+  { key: "Felys", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -14,7 +15,8 @@ export const EXPERIENCE = [
   {
     time: "Jan 2024 - Apr 2024",
     title: "Full-Stack Developer",
-    employer: "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
+    employer:
+      "Bridging Entrepreneurs to Students Initiative - University of Waterloo",
     about:
       "Designed and implemented website backend and admin dashboard, participated in frontend development, dockerized frontend and backend, and deployed them on cloud with loading balancing and auto-scaling ability.",
     skills: [
@@ -102,3 +104,20 @@ export const MORE = [
     response: "See MIT LISENCE.",
   },
 ];
+
+export const FELYS = {
+  Typing: [
+    "String: 'elysia' | \"elysia\"",
+    "Integer: 42 (only support up to Rust isize)",
+    "Boolean: true | false",
+  ],
+  Variable: ["Value assignment: x = y = z = 'elysia is my waifu'"],
+  Evalutaion: [
+    "Parenthesis: (a)",
+    "Arithmatic: a+b, a-b, a*b, a/b, a%b",
+    "Comparison: a>b, a>=b, a==b, a!=b, a<=b, a<=b, a>b",
+    "Logical: a&&b, a||b",
+    "Unary: +a, -a, !a",
+    "You can also use + to concat String.",
+  ],
+};
