@@ -1,0 +1,11 @@
+FROM rust:latest
+
+WORKDIR /app
+
+COPY . /app/
+
+RUN ["cargo", "build", "--release"]
+
+EXPOSE 3000
+
+CMD ["./target/release/felys"]

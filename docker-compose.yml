@@ -1,25 +1,25 @@
-version: "3.7"
+version: "3.8"
 
 services:
   backend:
-    build: frontend
-    container_name: frontend-server
+    build: felys
+    container_name: backend-felys-runner
     restart: always
     networks:
-      - frontend-network
+      - backend-network
 
   nginx:
     build: nginx
-    container_name: frontend-nginx
+    container_name: backend-nginx
     restart: always
     environment:
-      - HOST=felysneko.com www.felysneko.com
+      - HOST=api.felysneko.com
     ports:
       - 443:443
       - 80:80
     networks:
-      - frontend-network
+      - backend-network
 
 networks:
-  frontend-network:
-    name: frontend-network
+  backend-network:
+    name: backend-network
