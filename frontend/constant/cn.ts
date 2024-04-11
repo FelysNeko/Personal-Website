@@ -81,12 +81,12 @@ export const MORE = [
   {
     topic: "我的名字",
     response:
-      "在加拿大这边我一般叫Jonny Jin，常用网名是FelysNeko和Jhanny Kin。值得提一嘴的是：Felys是帕朵（Pardofelis）和爱莉（Elysia）名字的结合，然后Neko的意思是猫猫。",
+      "常用网名是银河猫猫侠，是由银河球棒侠和猫猫侠代购这两个名字融合而来。",
   },
   {
     topic: "兴趣爱好",
     response:
-      "以普遍理性而言，个人偏好于二次元的世界，唯二的例外是敲代码和打盘。最喜欢崩坏这个IP，单推爱莉，同时也是EVA厨，比较喜欢明日香。",
+      "喜欢弹琴、敲代码和打盘。单推爱莉，同时也是EVA厨，喜欢明日香。",
   },
   {
     topic: "技术栈",
@@ -96,7 +96,7 @@ export const MORE = [
   {
     topic: "特别鸣谢",
     response:
-      "十分感谢由CuriousR82制作的AutonotionR开源项目，作者也是滑铁卢大学的学生。这个项目帮助我快速的入门了现代网站开发，是不错的参考。",
+      "十分感谢由CuriousR82制作的AutonotionR开源项目，此项目作者也是滑铁卢大学的学生。它帮助我快速的入门了现代网站开发，是不错的参考。",
   },
   {
     topic: "Lisence",

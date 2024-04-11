@@ -55,7 +55,7 @@ export const PROJECT = [
   {
     image: "/firemoth-light.png",
     title: "Personal Website",
-    skills: ["next.js", "typescript", "tailwindcss"],
+    skills: ["next.js", "typescript", "axum"],
     about:
       "Made a static landing website as my portfolio page that support two languages.",
     github: "https://github.com/FelysNeko/Personal-Website",
@@ -87,7 +87,7 @@ export const MORE = [
   {
     topic: "Hobbies and Interests",
     response:
-      "In general, I enjoy and only enjoy things related to ACGN. The only two exceptions are frisbee and coding. Elysia is my only waifu, and Honkai series are my favourite games. Evangelion is my favourite anime, and Asuka is my favourite character.",
+      "I enjoy playing frisbee, guitar, and coding. Elysia is my only waifu. Evangelion is my favourite anime, and Asuka is my favourite character.",
   },
   {
     topic: "Tech Stack",
@@ -97,7 +97,7 @@ export const MORE = [
   {
     topic: "Special Thanks",
     response:
-      "Special thanks to the open source project AutonotionR by CuriousR82, another uWaterloo underguadate, as it helped me get into modern web development from a newbee in only one week.",
+      "Special thanks to the open source project AutonotionR by CuriousR82, another uWaterloo underguadate. This project helped me get into modern web development.",
   },
   {
     topic: "Lisence",
