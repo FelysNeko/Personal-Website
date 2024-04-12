@@ -1,4 +1,6 @@
 import CodeExecArea from "@/components/client/CodeExecArea";
+import Link from "next/link";
+import Image from "next/image";
 import { cookies } from "next/headers";
 import { FELYS as EN } from "@/constant/en";
 import { FELYS as CN } from "@/constant/cn";
@@ -21,8 +23,8 @@ const Felys = () => {
             <CodeExecArea lang={currentLang} />
           </div>
           <section className="h-20" />
-          <div className="lg:w-1/3 flex items-center">
-            <div className="m-2 lg:mx-6 space-y-3">
+          <div className="lg:w-1/3">
+            <div className="m-2 lg:mx-6 space-y-6">
               <h3 className="text-2xl font-bold">
                 {currentLang === "cn" ? "支持的操作" : "FEATURES"}
               </h3>
@@ -38,6 +40,14 @@ const Felys = () => {
                   </ul>
                 </div>
               ))}
+              <Link
+                href="https://github.com/FelysNeko/Felys-Interpreter"
+                target="_blank"
+                className="btn btn-primary"
+              >
+                GitHub
+                <Image src="/icon/newtab.svg" alt="" width={16} height={16} />
+              </Link>
             </div>
           </div>
         </div>
