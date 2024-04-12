@@ -12,7 +12,7 @@ const Felys = () => {
   return (
     <section className="min-h-screen pt-20">
       <h1 className="text-3xl font-bold mb-4">
-        {currentLang === "cn" ? "FELYS解释器" : "Felys Interpreter"}
+        {currentLang === "cn" ? "FELYS解释器" : "FELYS INTERPRETER"}
       </h1>
       <div className="lg:flex">
         <div className="lg:w-2/3">
@@ -26,8 +26,8 @@ const Felys = () => {
             </h3>
             <em>
               {currentLang === "cn"
-                ? "FELYS是我自己的语言，运行在用Rust编写的FELYS解释器上，现在支持表达式运算和变量赋值，如果想要体验条件和循环关键字，可以参考上游Felys-Project中用C写的旧版解释器（这版写的非常不专业），自行编译运行。这个项目是实验性的仅供学习参考。"
-                : "Felys is my programming language powered by Felys-Interpreter written in Rust, currently support expression evaluation and variable assignment. If you want to try condition and loop statements, you can refer to the old interpreter written in C, which is available in the upstream repo: Felys-Project. Note that you need to compile it yourself and it is written in a very unprofessional way. This project is experimental and for learning purpose only."}
+                ? "FELYS是我自己的语言，运行在用Rust编写的FELYS解释器上，现在支持表达式运算和变量赋值，如果想要体验条件和循环关键字，可以参考上游Felys-Project中用C写的旧版解释器（但写的并不好），需自行编译。"
+                : "Felys-Interpreter is written in Rust, currently support expression evaluation and variable assignment. The upstream, Felys-Project, has more features."}
             </em>
             {felys.map((each) => (
               <div key={each.topic}>
