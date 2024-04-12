@@ -20,7 +20,8 @@ export default function RootLayout({
     <html lang="en" className={notoSans.className}>
       <body>
         <Navbar />
-        {children}
+        <div className="mx-4 lg:mx-12">{children}</div>
+        <section className="h-10" />
         <Footer />
       </body>
     </html>

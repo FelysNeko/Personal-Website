@@ -7,7 +7,7 @@ const Experience = () => {
   const experience = currentLang === "cn" ? CN : EN;
 
   return (
-    <div className="min-h-screen mx-4 lg:mx-12">
+    <section className="min-h-screen pt-20" id="experience">
       <h1 className="text-3xl font-bold mb-4">
         {currentLang === "cn" ? "经历" : "EXPERIENCE"}
       </h1>
@@ -48,7 +48,7 @@ const Experience = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

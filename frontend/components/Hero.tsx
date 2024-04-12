@@ -7,7 +7,7 @@ const Hero = () => {
   const currentLang = cookies().get("lang")?.value;
 
   return (
-    <div className="hero min-h-screen bg-base-100">
+    <section className="hero min-h-screen bg-base-100">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="h-96 w-full relative">
           <Image
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

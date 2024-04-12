@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {navigation.map((each) => (
-            <li key={each.key}>
+            <li key={each.key} className="mx-1">
               <Link href={each.href}>{each.key}</Link>
             </li>
           ))}

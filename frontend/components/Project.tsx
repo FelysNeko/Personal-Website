@@ -9,7 +9,7 @@ const Project = () => {
   const project = currentLang  === "cn" ? CN : EN;
 
   return (
-    <div className="min-h-screen mx-4 lg:mx-12">
+    <section className="min-h-screen pt-20" id="project">
       <h1 className="text-3xl font-bold mb-4">
         {currentLang === "cn" ? "项目" : "PROJECT"}
       </h1>
@@ -51,7 +51,7 @@ const Project = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

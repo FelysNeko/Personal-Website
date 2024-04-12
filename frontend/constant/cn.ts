@@ -103,19 +103,28 @@ export const MORE = [
   },
 ];
 
-export const FELYS = {
-  类型: [
-    "字符串：'爱莉希雅' | \"爱莉希雅\"",
-    "整型：42（仅支持到Rust isize大小）",
-    "布尔值：true | false",
-  ],
-  变量: ["赋值：x = y = z = '单推爱莉希雅'"],
-  运算: [
-    "括号：(a)",
-    "四则：a+b、a-b、a*b、a/b、a%b",
-    "比较：a>b、a>=b、a==b、a!=b、a<=b、a<=b、a>b",
-    "逻辑：a&&b、a||b",
-    "一元：+a、-a、!a",
-    "可以使用+来合并字符串",
-  ],
-};
+export const FELYS = [
+  {
+    topic: "类型",
+    content: [
+      "字符串：'爱莉希雅' | \"爱莉希雅\"",
+      "整型：42（仅支持到Rust isize大小）",
+      "布尔值：true | false",
+    ],
+  },
+  {
+    topic: "变量",
+    content: ["赋值：x = y = z = '单推爱莉希雅'"],
+  },
+  {
+    topic: "运算",
+    content: [
+      "括号：(a)",
+      "四则：a+b、a-b、a*b、a/b、a%b",
+      "比较：a>b、a>=b、a==b、a!=b、a<=b、a<=b、a>b",
+      "逻辑：a&&b、a||b",
+      "一元：+a、-a、!a",
+      "可以使用+来合并字符串",
+    ],
+  },
+];

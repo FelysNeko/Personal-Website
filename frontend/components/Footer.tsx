@@ -9,11 +9,11 @@ const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-base-200 text-neutral-content">
       <aside className="items-center grid-flow-col">
-        <p className="mx-2">
+        <h1 className="mx-2">
           {currentLang === "cn"
             ? "由银河猫猫侠维护喵"
             : "Maintained by FelysNeko"}
-        </p>
+        </h1>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {LINKREE.map((each, i) => (

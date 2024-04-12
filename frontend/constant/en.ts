@@ -105,19 +105,29 @@ export const MORE = [
   },
 ];
 
-export const FELYS = {
-  Typing: [
-    "String: 'elysia' | \"elysia\"",
-    "Integer: 42 (only support up to Rust isize)",
-    "Boolean: true | false",
-  ],
-  Variable: ["Value assignment: x = y = z = 'elysia is my waifu'"],
-  Evalutaion: [
-    "Parenthesis: (a)",
-    "Arithmatic: a+b, a-b, a*b, a/b, a%b",
-    "Comparison: a>b, a>=b, a==b, a!=b, a<=b, a<=b, a>b",
-    "Logical: a&&b, a||b",
-    "Unary: +a, -a, !a",
-    "You can also use + to concat String.",
-  ],
-};
+
+export const FELYS = [
+  {
+    topic: "Typing",
+    content: [
+      "String: 'elysia' | \"elysia\"",
+      "Integer: 42 (only support up to Rust isize)",
+      "Boolean: true | false",
+    ],
+  },
+  {
+    topic: "Variable",
+    content: ["Value assignment: x = y = z = 'elysia is my waifu'"],
+  },
+  {
+    topic: "Evalutaion",
+    content: [
+      "Parentheses: (a)",
+      "Arithmatic: a+b, a-b, a*b, a/b, a%b",
+      "Comparison: a>b, a>=b, a==b, a!=b, a<=b, a<=b, a>b",
+      "Logical: a&&b, a||b",
+      "Unary: +a, -a, !a",
+      "You can also use + to concat String.",
+    ],
+  },
+];
