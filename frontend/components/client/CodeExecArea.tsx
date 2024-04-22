@@ -2,7 +2,7 @@
 import { FormEvent, useState } from "react";
 
 interface Props {
-  lang: string | undefined;
+  lang: string;
 }
 
 const CodeExecArea = ({ lang }: Props) => {

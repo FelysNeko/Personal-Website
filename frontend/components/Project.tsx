@@ -1,17 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import { cookies } from "next/headers";
 import { PROJECT as EN } from "@/constant/en";
 import { PROJECT as CN } from "@/constant/cn";
 
-const Project = () => {
-  const currentLang = cookies().get("lang")?.value;
-  const project = currentLang  === "cn" ? CN : EN;
+interface Props {
+  lang: string;
+}
+
+const Project = ({ lang }: Props) => {
+  const project = lang === "cn" ? CN : EN;
 
   return (
     <section className="min-h-screen pt-20" id="project">
       <h1 className="text-3xl font-bold mb-4">
-        {currentLang === "cn" ? "项目" : "PROJECT"}
+        {lang === "cn" ? "项目" : "PROJECT"}
       </h1>
       <div className="grid xl:grid-cols-2 gap-6">
         {project.map((each, i) => (

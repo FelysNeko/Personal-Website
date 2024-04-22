@@ -2,16 +2,16 @@
 import { setLangCookie } from "@/app/actions";
 
 interface Props {
-  currentLang: string;
+  lang: string;
 }
 
-const ChangeLangBtn = ({ currentLang }: Props) => {
+const ChangeLangBtn = ({ lang }: Props) => {
   return (
     <button
       className="btn me-3"
-      onClick={() => setLangCookie(currentLang === "en" ? "cn" : "en")}
+      onClick={() => setLangCookie(lang === "en" ? "cn" : "en")}
     >
-      {(currentLang === "en" ? "cn" : "en").toUpperCase()}
+      {(lang === "en" ? "cn" : "en").toUpperCase()}
     </button>
   );
 };

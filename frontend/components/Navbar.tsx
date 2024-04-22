@@ -3,11 +3,11 @@ import Link from "next/link";
 import ChangeLangBtn from "@/components/client/ChangeLangBtn";
 import { NAVIGATION as EN } from "@/constant/en";
 import { NAVIGATION as CN } from "@/constant/cn";
-import { cookies } from "next/headers";
+import { getLangFromCookies } from "@/utils/cookies";
 
 const Navbar = () => {
-  const currentLang = cookies().get("lang")?.value;
-  const navigation = currentLang === "cn" ? CN : EN;
+  const lang = getLangFromCookies();
+  const navigation = lang === "cn" ? CN : EN;
 
   return (
     <div className="navbar fixed z-[2] bg-base-100">
@@ -50,7 +50,7 @@ const Navbar = () => {
             />
           </div>
           <h1 className="text-xl w-28">
-            {currentLang === "cn" ? "银河猫猫侠" : "FelysNeko"}
+            {lang === "cn" ? "银河猫猫侠" : "FelysNeko"}
           </h1>
         </Link>
       </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <ChangeLangBtn currentLang={currentLang || "en"} />
+        <ChangeLangBtn lang={lang || "en"} />
       </div>
     </div>
   );
