@@ -13,17 +13,18 @@ const CodeExecArea = ({ lang }: Props) => {
 
     const formData = new FormData(event.currentTarget);
     const code = formData.get("code");
-    const codeList = code?.toString().split("\n");
 
-    const response = await fetch("https://api.felysneko.com/run", {
+    const response = await fetch("https://api.felysneko.com/felys/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ code: codeList }),
+      body: JSON.stringify({ input: code }),
     }).catch((e) => console.log(e));
 
+    console.log(response)
+
     if (response && response.ok) {
-      const data = await response.json();
-      setResult(data.result);
+      const data = await response.text();
+      setResult(data);
     }
   };
 
