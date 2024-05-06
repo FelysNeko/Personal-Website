@@ -2,6 +2,7 @@
 import { Editor } from "@monaco-editor/react";
 import { useState } from "react";
 
+
 interface Props {
   lang: string;
 }
@@ -44,19 +45,29 @@ const CodingArea = ({ lang }: Props) => {
 
   return (
     <div className="lg:flex">
-      <div className="lg:w-1/2 h-[calc(100vh-200px)]">
+      <div className="lg:w-1/2 h-[60vh] lg:h-[calc(100vh-200px)]">
         <Editor
           theme="vs-dark"
           defaultValue={sample}
+          language="python"
           onChange={(c) => setCode(c)}
-          options={{ fontSize: 18 }}
+          options={{
+            fontSize: 18,
+            lineNumbers: "off",
+            scrollBeyondLastLine: false,
+            automaticLayout: true,
+            scrollbar: { horizontal: "hidden" },
+            minimap: {
+              enabled: false,
+            },
+          }}
           height={`calc(100% - 48px)`}
         />
         <button className="btn btn-primary w-full" onClick={handleExecute}>
           {lang === "cn" ? "运行" : "EXECUTE"}
         </button>
       </div>
-      <div className="lg:w-1/2 h-[calc(100vh-200px)] border border-neutral-800 overflow-auto">
+      <div className="lg:w-1/2 min-h-[20vh] lg:h-[calc(100vh-200px)] border border-neutral-800 overflow-auto">
         <p className="whitespace-pre-wrap p-2">
           <code className="text-lg text-elypink">{result}</code>
         </p>
