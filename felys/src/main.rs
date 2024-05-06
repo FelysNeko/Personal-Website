@@ -28,7 +28,7 @@ use serde::Deserialize;
 #[tokio::main]
 async fn main() {
     let cors = CorsLayer::new()
-        .allow_methods([Method::GET, Method::POST])
+        .allow_methods([Method::GET, Method::POST, Method::OPTIONS])
         .allow_origin(Any);
     
     let app = Router::new()
