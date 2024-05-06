@@ -12,7 +12,7 @@ if x == 1 {
     print 'hello world!';
 } elif x == 13 {
     while x > 0 {
-        print x - 3;
+        print x;
         x = x - 1;
     }
 } else {
