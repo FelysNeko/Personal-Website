@@ -11,6 +11,7 @@ use std::time::Duration;
 use std::sync::mpsc;
 use std::thread;
 use http::Method;
+use http::header;
 use tower_http::cors::{
     CorsLayer,
     Any
@@ -29,6 +30,7 @@ use serde::Deserialize;
 async fn main() {
     let cors = CorsLayer::new()
         .allow_methods([Method::GET, Method::POST, Method::OPTIONS])
+        .allow_headers([header::CONTENT_TYPE])
         .allow_origin(Any);
     
     let app = Router::new()
