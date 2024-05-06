@@ -1,8 +1,8 @@
 export const NAVIGATION = [
+  { key: "Felys", href: "/felys" },
   { key: "Experience", href: "/#experience" },
   { key: "Project", href: "/#project" },
   { key: "More", href: "/#more" },
-  { key: "Felys", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -102,32 +102,5 @@ export const MORE = [
   {
     topic: "Lisence",
     response: "See MIT LISENCE.",
-  },
-];
-
-
-export const FELYS = [
-  {
-    topic: "Typing",
-    content: [
-      "String: 'elysia' | \"elysia\"",
-      "Integer: 42 (only support up to Rust isize)",
-      "Boolean: true | false",
-    ],
-  },
-  {
-    topic: "Variable",
-    content: ["Value assignment: x = y = z = 'elysia is my waifu'"],
-  },
-  {
-    topic: "Evalutaion",
-    content: [
-      "Parentheses: (a)",
-      "Arithmatic: a+b, a-b, a*b, a/b, a%b",
-      "Comparison: a>b, a>=b, a==b, a!=b, a<=b, a<=b, a>b",
-      "Logical: a&&b, a||b",
-      "Unary: +a, -a, !a",
-      "You can also use + to concat String.",
-    ],
   },
 ];

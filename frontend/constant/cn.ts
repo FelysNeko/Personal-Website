@@ -1,8 +1,8 @@
 export const NAVIGATION = [
+  { key: "FELYS", href: "/felys" },
   { key: "经历", href: "/#experience" },
   { key: "项目", href: "/#project" },
   { key: "更多", href: "/#more" },
-  { key: "FELYS", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -100,31 +100,5 @@ export const MORE = [
   {
     topic: "Lisence",
     response: "参考MIT LISENCE。",
-  },
-];
-
-export const FELYS = [
-  {
-    topic: "类型",
-    content: [
-      "字符串：'爱莉希雅' | \"爱莉希雅\"",
-      "整型：42（仅支持到Rust isize大小）",
-      "布尔值：true | false",
-    ],
-  },
-  {
-    topic: "变量",
-    content: ["赋值：x = y = z = '单推爱莉希雅'"],
-  },
-  {
-    topic: "运算",
-    content: [
-      "括号：(a)",
-      "四则：a+b、a-b、a*b、a/b、a%b",
-      "比较：a>b、a>=b、a==b、a!=b、a<=b、a<=b、a>b",
-      "逻辑：a&&b、a||b",
-      "一元：+a、-a、!a",
-      "可以使用+来合并字符串",
-    ],
   },
 ];

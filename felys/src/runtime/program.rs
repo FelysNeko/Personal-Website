@@ -33,6 +33,7 @@ impl Output {
     }
 }
 
+
 impl Error {
     pub fn render(&self) -> String {
         return self.msg.clone()
