@@ -11,8 +11,9 @@ impl Program {
     pub fn run(self) -> Result<Output, Error> {
         let mut global: Scope = Scope::init();
         let mut output: Output = Output::new();
+        let mut counter: usize = 0;
         for mut stat in self.body {
-            stat.run(&mut global, &mut output)?;
+            stat.run(&mut global, &mut output, &mut counter)?;
         }
         Ok(output)
     }

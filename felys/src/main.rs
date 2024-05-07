@@ -7,9 +7,6 @@ use core::frontend::Lexer;
 use core::runtime::Output;
 use core::Program;
 
-use std::time::Duration;
-use std::sync::mpsc;
-use std::thread;
 use http::Method;
 use http::header;
 use tower_http::cors::{
@@ -51,17 +48,7 @@ async fn root() -> &'static str {
 async fn exec(
     Json(payload): Json<FelysCode>
 ) -> String {
-    let (sender, receiver) = mpsc::channel();
-    thread::spawn(move || sender.send(run(payload.input)));
-    match receiver.recv_timeout(Duration::from_secs(1)) {
-        Ok(result) => result,
-        Err(_) => "TimeoutError: exceeded 1 second runtime limitation".to_string()
-    }
-}
-
-
-fn run(input: String) -> String {
-    let main: Program = match Lexer::parse(input) {
+    let main: Program = match Lexer::parse(payload.input) {
         Ok(p) => p,
         Err(e) => return format!("SyntaxError: {}", e.render())
     };
