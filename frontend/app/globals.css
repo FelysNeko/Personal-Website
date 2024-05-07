@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.firemoth {
+  background-image: url("/firemoth-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

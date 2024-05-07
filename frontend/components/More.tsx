@@ -6,13 +6,13 @@ interface Props {
 }
 
 const More = ({ lang }: Props) => {
-  const more = lang === "cn" ? CN : EN;
+  const more = lang === "中" ? CN : EN;
 
   return (
     <section className="min-h-screen pt-20" id="more">
       <div className="flex flex-col place-items-center">
         <h1 className="text-3xl font-bold mb-4">
-          {lang === "cn" ? "更多" : "MORE"}
+          {lang === "中" ? "更多" : "MORE"}
         </h1>
         {more.map((each, i) => (
           <div

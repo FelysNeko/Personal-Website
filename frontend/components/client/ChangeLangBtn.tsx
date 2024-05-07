@@ -9,9 +9,9 @@ const ChangeLangBtn = ({ lang }: Props) => {
   return (
     <button
       className="btn me-3"
-      onClick={() => setLangCookie(lang === "en" ? "cn" : "en")}
+      onClick={() => setLangCookie(lang === "en" ? "中" : "en")}
     >
-      {(lang === "en" ? "cn" : "en").toUpperCase()}
+      {(lang === "en" ? "中" : "en").toUpperCase()}
     </button>
   );
 };

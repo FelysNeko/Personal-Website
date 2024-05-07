@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer items-center p-4 bg-base-200 text-neutral-content">
       <aside className="items-center grid-flow-col">
         <h1 className="mx-2">
-          {lang === "cn" ? "由银河猫猫侠维护喵" : "Maintained by FelysNeko"}
+          {lang === "中" ? "由银河猫猫侠维护喵" : "Maintained by FelysNeko"}
         </h1>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

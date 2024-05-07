@@ -7,7 +7,7 @@ import { getLangFromCookies } from "@/utils/cookies";
 
 const Navbar = () => {
   const lang = getLangFromCookies();
-  const navigation = lang === "cn" ? CN : EN;
+  const navigation = lang === "中" ? CN : EN;
 
   return (
     <div className="navbar fixed z-[2] bg-base-100">
@@ -50,7 +50,7 @@ const Navbar = () => {
             />
           </div>
           <h1 className="text-xl w-28">
-            {lang === "cn" ? "银河猫猫侠" : "FelysNeko"}
+            {lang === "中" ? "银河猫猫侠" : "FelysNeko"}
           </h1>
         </Link>
       </div>

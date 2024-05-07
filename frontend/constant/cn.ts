@@ -1,8 +1,7 @@
 export const NAVIGATION = [
-  { key: "FELYS", href: "/felys" },
   { key: "经历", href: "/#experience" },
-  { key: "项目", href: "/#project" },
   { key: "更多", href: "/#more" },
+  { key: "FELYS", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -43,40 +42,6 @@ export const EXPERIENCE = [
   },
 ];
 
-export const PROJECT = [
-  {
-    image: "/firemoth-light.png",
-    title: "Felys项目",
-    skills: ["C", "Rust", "Makefile"],
-    about:
-      "制作了一款AST解析器和一个简易的编程语言，可以做到基本的计算和逻辑运算",
-    github: "https://github.com/FelysNeko/Felys-Project",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "个人网站",
-    skills: ["next.js", "typescript", "tailwindcss"],
-    about: "制作了一个静态的网站用作于我的主页",
-    github: "https://github.com/FelysNeko/Personal-Website",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "化学计算器",
-    skills: ["python", "flask"],
-    about:
-      "这是一个Python的包可以解决一些高中难度的化学题，并且以此为基础制作了一个命令行工具和网站",
-    github: "https://github.com/FelysNeko/Chemistry-Calculator",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "B站社区维护包",
-    skills: ["bs4", "scikit-learn", "pandas"],
-    about:
-      "提供一系列工具从B站抓取数据，然后训练了一个词袋模型用于过滤和举报违规评论，成功率高达90%",
-    github: "https://github.com/FelysNeko/BiliBili-Community-Suite",
-  },
-];
-
 export const MORE = [
   {
     topic: "我的名字",
@@ -93,12 +58,22 @@ export const MORE = [
       "个人最喜欢也最擅长Python和C，同时在学习Rust，主要是因为喜欢像编程语言或者操作系统这种偏底层的东西。虽然我也做全栈开发，但毕竟不算事最喜欢的，所以应该不会走的很深。",
   },
   {
+    topic: "关于图片",
+    response:
+      "本站唯一使用的一张图片源自崩坏三逐火之蛾，最喜欢的一集喵。",
+  },
+  {
+    topic: "副业项目",
+    response:
+      "我不再公开我的项目代目，但是会将比较好的项目重新整合，然后做进这个网站用于展示，并且源代码保持公开。",
+  },
+  {
     topic: "特别鸣谢",
     response:
       "十分感谢由CuriousR82制作的AutonotionR开源项目，此项目作者也是滑铁卢大学的学生。它帮助我快速的入门了现代网站开发，是不错的参考。",
   },
   {
     topic: "Lisence",
-    response: "参考MIT LISENCE。",
+    response: "参考Apache-2.0",
   },
 ];

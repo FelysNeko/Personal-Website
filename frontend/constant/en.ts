@@ -1,8 +1,7 @@
 export const NAVIGATION = [
-  { key: "Felys", href: "/felys" },
   { key: "Experience", href: "/#experience" },
-  { key: "Project", href: "/#project" },
   { key: "More", href: "/#more" },
+  { key: "Felys", href: "/felys" },
 ];
 
 export const LINKREE = [
@@ -43,41 +42,6 @@ export const EXPERIENCE = [
   },
 ];
 
-export const PROJECT = [
-  {
-    image: "/firemoth-light.png",
-    title: "Felys Project",
-    skills: ["C", "Rust", "Makefile"],
-    about:
-      "Wrote a AST parser and a simple interpretered programming language which can do basic expression evaluation and logical operation.",
-    github: "https://github.com/FelysNeko/Felys-Project",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "Personal Website",
-    skills: ["next.js", "typescript", "axum"],
-    about:
-      "Made a static landing website as my portfolio page that support two languages.",
-    github: "https://github.com/FelysNeko/Personal-Website",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "Chemistry Calculator",
-    skills: ["python", "flask"],
-    about:
-      "Created a python package that can do high school chemistry problems, and build cli tool and website based on it.",
-    github: "https://github.com/FelysNeko/Chemistry-Calculator",
-  },
-  {
-    image: "/firemoth-light.png",
-    title: "BiliBili Community Suite",
-    skills: ["bs4", "scikit-learn", "pandas"],
-    about:
-      "Provide tools to fetch data from BiliBili, and trained a bag-of-word model to filter and report comments against community rules with 90% success rate.",
-    github: "https://github.com/FelysNeko/BiliBili-Community-Suite",
-  },
-];
-
 export const MORE = [
   {
     topic: "General Information",
@@ -95,12 +59,22 @@ export const MORE = [
       "I know Python and C the best, and am currently learning Rust, because I want to do lower level development like programming language or operating system in the future. Although I can also do full stack web development, it's not my favourite path, so I won't get too deep into it.",
   },
   {
+    topic: "About Images",
+    response:
+      "The only image used in this website is the firemoth logo from Honkai Impact 3rd.",
+  },
+  {
+    topic: "Side Projects",
+    response:
+      "I no longer post my side projects to the public. However, I will bring the big ones to this website for demo purpose, and the source code will be available in website repository.",
+  },
+  {
     topic: "Special Thanks",
     response:
       "Special thanks to the open source project AutonotionR by CuriousR82, another uWaterloo underguadate. This project helped me get into modern web development.",
   },
   {
     topic: "Lisence",
-    response: "See MIT LISENCE.",
+    response: "See Apache-2.0",
   },
 ];

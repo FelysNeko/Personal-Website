@@ -6,12 +6,12 @@ interface Props {
 }
 
 const Experience = ({ lang }: Props) => {
-  const experience = lang === "cn" ? CN : EN;
+  const experience = lang === "中" ? CN : EN;
 
   return (
     <section className="min-h-screen pt-20" id="experience">
       <h1 className="text-3xl font-bold mb-4">
-        {lang === "cn" ? "经历" : "EXPERIENCE"}
+        {lang === "中" ? "经历" : "EXPERIENCE"}
       </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {experience.map((each, i) => (

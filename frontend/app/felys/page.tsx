@@ -7,7 +7,7 @@ const Felys = () => {
   return (
     <section className="min-h-screen pt-20">
       <h1 className="text-3xl font-bold mb-4">
-        {lang === "cn" ? "FELYS解释器" : "FELYS INTERPRETER"}
+        {lang === "中" ? "FELYS解释器" : "FELYS INTERPRETER"}
       </h1>
       <CodingArea lang={lang} />
     </section>
