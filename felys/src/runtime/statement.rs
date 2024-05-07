@@ -83,7 +83,7 @@ impl Statement {
 impl Error {
     fn exceed_max_run() -> Result<(), Error> {
         Err(Self {
-            msg: format!("exceed maxium 1000 statements running limitation")
+            msg: format!("exceeded 1000 statements per online execution")
         })
     }
 
