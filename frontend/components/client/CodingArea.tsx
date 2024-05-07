@@ -72,7 +72,7 @@ const CodingArea = ({ lang }: Props) => {
           {lang === "中" ? "运行" : "EXECUTE"}
         </button>
       </div>
-      <div className="lg:w-1/2 min-h-40 lg:h-[calc(100vh-160px)] border border-neutral-800 overflow-auto firemoth">
+      <div className="lg:w-1/2 min-h-40 lg:min-h-60 lg:h-[calc(100vh-160px)] border border-neutral-800 overflow-auto firemoth">
         <p className="whitespace-pre-wrap p-2">
           <code className="text-lg">{result}</code>
         </p>
