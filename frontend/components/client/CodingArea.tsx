@@ -46,7 +46,7 @@ const CodingArea = ({ lang }: Props) => {
 
   return (
     <div className="lg:flex">
-      <div className="lg:w-1/2 h-[calc(100vh-308px)] lg:h-[calc(100vh-160px)]">
+      <div className="lg:w-1/2 min-h-60 h-[calc(100vh-308px)] lg:h-[calc(100vh-160px)]">
         <Editor
           theme="vs-dark"
           defaultValue={sample}
