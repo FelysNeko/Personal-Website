@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LINKREE } from "@/constant/en";
+import { LINKTREE } from "@/constant/en";
 
 interface Props {
   lang: string;
@@ -22,7 +22,7 @@ const Hero = ({ lang }: Props) => {
           </em>
         </div>
         <div className="">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl font-bold text-elypink">
             {lang === "中" ? "银河猫猫侠" : "FelysNeko"}
           </h1>
           <p className="py-6">
@@ -37,7 +37,7 @@ const Hero = ({ lang }: Props) => {
             >
               {lang === "中" ? "联系我" : "CONTACT ME"}
             </Link>
-            {LINKREE.map((each, i) => (
+            {LINKTREE.map((each, i) => (
               <Link key={i} href={each.href} className="mx-1" target="_blank">
                 <Image src={each.icon} alt="" width={28} height={28} />
               </Link>

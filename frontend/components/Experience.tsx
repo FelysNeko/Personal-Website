@@ -9,7 +9,7 @@ const Experience = ({ lang }: Props) => {
   const experience = lang === "中" ? CN : EN;
 
   return (
-    <section className="min-h-screen pt-20" id="experience">
+    <section className="min-h-screen pt-20">
       <h1 className="text-3xl font-bold mb-4">
         {lang === "中" ? "经历" : "EXPERIENCE"}
       </h1>

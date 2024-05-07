@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LINKREE } from "@/constant/en";
+import { LINKTREE } from "@/constant/en";
 import { getLangFromCookies } from "@/utils/cookies";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         </h1>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        {LINKREE.map((each, i) => (
+        {LINKTREE.map((each, i) => (
           <Link key={i} href={each.href} target="_blank">
             <Image src={each.icon} alt="" width={24} height={24} />
           </Link>

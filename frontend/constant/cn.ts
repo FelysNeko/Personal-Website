@@ -1,10 +1,9 @@
 export const NAVIGATION = [
-  { key: "经历", href: "/#experience" },
-  { key: "更多", href: "/#more" },
+  { key: "主页", href: "/" },
   { key: "FELYS", href: "/felys" },
 ];
 
-export const LINKREE = [
+export const LINKTREE = [
   { icon: "/icon/linkedin.svg", href: "https://www.linkedin.com/in/jonny-jin" },
   { icon: "/icon/github.svg", href: "https://github.com/FelysNeko" },
   { icon: "/icon/instagram.svg", href: "https://www.instagram.com/jhanny_kin" },
