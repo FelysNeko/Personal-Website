@@ -45,22 +45,17 @@ export const MORE = [
   {
     topic: "General Information",
     response:
-      "My preferred name is Jonny Jin, and you might know me as FelysNeko or Jhanny Kin on the Internet. By the way, Felys is the combination of two names: Pardofelis and Elysia from Honkai Impact 3rd, and Neko means cat.",
+      "My preferred name is Jonny Jin, and you might know me as FelysNeko or Jhanny Kin on the Internet.",
   },
   {
     topic: "Hobbies and Interests",
     response:
-      "I enjoy playing frisbee, guitar, and coding. Elysia is my only waifu. Evangelion is my favourite anime, and Asuka is my favourite character.",
+      "I enjoy playing frisbee, guitar, and coding.",
   },
   {
     topic: "Tech Stack",
     response:
       "I know Python and C the best, and am currently learning Rust, because I want to do lower level development like programming language or operating system in the future. Although I can also do full stack web development, it's not my favourite path, so I won't get too deep into it.",
-  },
-  {
-    topic: "About Images",
-    response:
-      "The only image used in this website is the firemoth logo from Honkai Impact 3rd.",
   },
   {
     topic: "Side Projects",
