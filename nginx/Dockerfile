@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 COPY ./templates /etc/nginx/templates
 

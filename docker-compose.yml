@@ -1,7 +1,7 @@
 services:
   backend:
-    build: felys
-    container_name: backend-felys-runner
+    build: backend
+    container_name: backend-felys
     restart: always
     networks:
       - backend-network
