@@ -1,7 +1,7 @@
 services:
   backend:
-    build: backend
-    container_name: backend-felys
+    build: rust
+    container_name: backend-rust
     restart: always
     networks:
       - backend-network
