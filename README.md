@@ -3,8 +3,8 @@
 This the repo for my portfolio website, and my only public repo. I will try to bring all my major projects to it, and the code I put here generally represents my best coding ability.
 
 ## Apps and Middlewares
-- [felys](/felys/) - Axum app for Felys-Interpreter
-- [frontend](/frontend/) - Next.js app of the website
+- [axum](/axum/) - Axum app for Felys-Interpreter
+- [nextjs](/nextjs/) - Next.js app of the website
 - [nginx](/nginx/) - Reverse proxy for the backend cluster
 
 There will be more apps added to the website as demos in the future, but only the big ones.
