@@ -15,7 +15,7 @@ server {
     server_name ${HOST};
 
     location /axum/ {
-        proxy_pass http://felys/;
+        proxy_pass http://axum/;
     }
 
     location /fast/ {
