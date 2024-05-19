@@ -6,21 +6,11 @@ interface Props {
   lang: string;
 }
 
-const sample: string = `x = 13;
-
-if x == 1 {
-    print 'hello world!';
-} elif x == 13 {
-    while x > 0 {
-        print x;
-        x = x - 1;
-    }
-} else {
-    print 42;
+const sample: string = `let greet = |x| {
+    render 'hello ' + x + '!';
 }
 
-print 'Elysia is my waifu!';
-print '我永远单推爱莉！';
+greet('world');
 `;
 
 const docs: string = `Coming soon...`;
@@ -32,7 +22,7 @@ const CodingArea = ({ lang }: Props) => {
   const handleExecute = async () => {
     const response =
       code &&
-      (await fetch("https://api.felysneko.com/felys/exec", {
+      (await fetch("https://api.felysneko.com/axum/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ input: code }),
@@ -50,7 +40,6 @@ const CodingArea = ({ lang }: Props) => {
         <Editor
           theme="vs-dark"
           defaultValue={sample}
-          language="python"
           onChange={(c) => setCode(c)}
           loading={<div className="skeleton w-full h-full" />}
           options={{
