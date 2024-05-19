@@ -1,8 +1,8 @@
 FROM python:3.12-slim
 
-COPY . /app/
+COPY . /fast/
 
-WORKDIR /app/
+WORKDIR /fast/
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
