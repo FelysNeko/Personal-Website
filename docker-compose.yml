@@ -1,7 +1,14 @@
 services:
-  backend:
-    build: rust
-    container_name: backend-rust
+  axum:
+    build: axum
+    container_name: backend-axum
+    restart: always
+    networks:
+      - backend-network
+
+  fast:
+    build: fast
+    container_name: backend-fast
     restart: always
     networks:
       - backend-network

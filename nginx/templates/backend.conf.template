@@ -1,5 +1,9 @@
-upstream backend {
-    server backend-felys:3000;
+upstream axum {
+    server backend-axum:3000;
+}
+
+upstream fast {
+    server backend-fast:8000;
 }
 
 server {
@@ -10,8 +14,12 @@ server {
 
     server_name ${HOST};
 
-    location /felys/ {
-        proxy_pass http://backend/;
+    location /axum/ {
+        proxy_pass http://felys/;
+    }
+
+    location /fast/ {
+        proxy_pass http://fast/;
     }
 }
 

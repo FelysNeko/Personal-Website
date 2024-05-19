@@ -13,3 +13,7 @@ app.add_middleware(
 
 app.include_router(image.router, prefix='/image')
 app.include_router(chemistry.router, prefix='/chemistry')
+
+@app.get('/')
+def root():
+    return 'toolbox root endpoint'
