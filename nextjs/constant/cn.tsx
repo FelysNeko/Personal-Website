@@ -1,5 +1,6 @@
 export const NAVIGATION = [
   { key: "主页", href: "/" },
+  { key: "工具", href: "/toolset" },
   { key: "FELYS", href: "/felys" },
 ];
 
@@ -136,7 +137,8 @@ export const DOCS = (
     <br />
     关键字<code className="badge">if</code>、<code className="badge">elif</code>
     、<code className="badge">else</code>以及
-    <code className="badge">while</code>和其他语言基本一致，表达式不需要加括号，后面一定需要跟一个代码块，即大括号。
+    <code className="badge">while</code>
+    和其他语言基本一致，表达式不需要加括号，后面一定需要跟一个代码块，即大括号。
     <code className="badge">render</code>等同于Python中的
     <code className="badge">print</code>
     ，就是打印输出的意思。<code className="badge">return</code>

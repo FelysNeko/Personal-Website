@@ -1,5 +1,6 @@
 export const NAVIGATION = [
   { key: "Home", href: "/" },
+  { key: "Toolset", href: "/toolset" },
   { key: "Felys", href: "/felys" },
 ];
 

@@ -39,7 +39,13 @@ const CodingArea = ({ lang }: Props) => {
   return (
     <>
       <div className="lg:flex">
-        <div className="lg:w-1/2 min-h-60 h-[calc(100vh-308px)] lg:h-[calc(100vh-160px)]">
+        <div
+          className={`
+            lg:w-1/2 min-h-60 h-[calc(100vh-308px)] lg:h-[calc(100vh-160px)]
+            border-t border-s border-e lg:border-b lg:border-e-0
+            border-neutral-800
+        `}
+        >
           <Editor
             theme="vs-dark"
             defaultValue={sample}
@@ -64,7 +70,13 @@ const CodingArea = ({ lang }: Props) => {
             {lang === "中" ? "运行" : "EXECUTE"}
           </button>
         </div>
-        <div className="lg:w-1/2 min-h-40 lg:min-h-60 lg:h-[calc(100vh-160px)] border border-neutral-800 overflow-auto firemoth">
+        <div
+          className={`
+            lg:w-1/2 min-h-40 lg:min-h-60 lg:h-[calc(100vh-160px)] 
+            border-e border-b border-s lg:border-t lg:border-s-0
+          border-neutral-800 overflow-auto firemoth
+          `}
+        >
           <p className="whitespace-pre-wrap p-2">
             <code className="text-lg">{result}</code>
           </p>

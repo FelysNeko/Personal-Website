@@ -7,7 +7,7 @@ from fast import chemistry
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_methods=['*'],
+    allow_methods=['GET', 'POST'],
     allow_origins=['*'],
     allow_headers=["*"],
 )
