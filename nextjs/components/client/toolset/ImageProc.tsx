@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
 interface Props {
@@ -23,7 +23,11 @@ const ImageProc = ({ lang }: Props) => {
   const [result, setResult] = useState("/firemoth-dark.png");
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
 
-  const reload = async (raw: File, clr: string, thr: string, rev: boolean) => {
+  const reload = async () => {
+    if (raw === null) {
+      return;
+    }
+
     const formData = new FormData();
     formData.append("file", raw);
 
@@ -37,48 +41,32 @@ const ImageProc = ({ lang }: Props) => {
 
     if (response && response.ok) {
       const raw = await response.blob();
-      URL.revokeObjectURL(result);
       setResult(URL.createObjectURL(raw));
-      return true;
     } else {
-      setErr(true);
-      setRaw(null);
-      URL.revokeObjectURL(original);
-      URL.revokeObjectURL(result);
       setOriginal("/firemoth-dark.png");
       setResult("/firemoth-dark.png");
-      return false;
+      setErr(true);
     }
   };
 
-  const handleRange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setThr(e.target.value);
+  useEffect(() => {
     if (debounceRef.current) {
       clearTimeout(debounceRef.current);
     }
     debounceRef.current = setTimeout(() => {
-      if (raw) {
-        reload(raw, clr, e.target.value, rev);
-      }
+      reload();
     }, 150);
-  };
+  }, [thr]);
 
-  const handleColor = async (color: string) => {
-    setClr(color);
-    raw && reload(raw, color, thr, rev);
-  };
-
-  const handleReverse = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    setRev(e.target.checked);
-    raw && reload(raw, clr, thr, e.target.checked);
-  };
+  useEffect(() => {
+    reload();
+  }, [clr, rev, raw]);
 
   const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
       const image = e.target.files[0];
+      setOriginal(URL.createObjectURL(image));
       setRaw(image);
-      const success = await reload(image, clr, thr, rev);
-      success && setOriginal(URL.createObjectURL(image));
     }
   };
 
@@ -118,7 +106,7 @@ const ImageProc = ({ lang }: Props) => {
               key={color.en}
               role="tab"
               className={`tab ${clr === color.en ? "tab-active" : ""}`}
-              onClick={() => handleColor(color.en)}
+              onClick={() => setClr(color.en)}
             >
               {lang === "中" ? color.cn : color.en.toUpperCase()}
             </button>
@@ -128,7 +116,11 @@ const ImageProc = ({ lang }: Props) => {
 
       <div className="py-4 px-2 md:px-6 flex items-center gap-2 lg:gap-4">
         <h3 className="break-keep">{lang === "中" ? "反转" : "REVERSE"}</h3>
-        <input type="checkbox" className="checkbox" onChange={handleReverse} />
+        <input
+          type="checkbox"
+          className="checkbox"
+          onChange={(e) => setRev(e.target.checked)}
+        />
         <h3 className="break-keep">{lang === "中" ? "阈值" : "THRESHOLD"}</h3>
         <input
           type="range"
@@ -136,7 +128,7 @@ const ImageProc = ({ lang }: Props) => {
           max="255"
           value={thr}
           className="range"
-          onChange={handleRange}
+          onChange={(e) => setThr(e.target.value)}
         />
         <button className="ms-2" onClick={handleDownload}>
           <svg
@@ -152,7 +144,7 @@ const ImageProc = ({ lang }: Props) => {
           </svg>
         </button>
       </div>
-      
+
       {err && (
         <button className="toast toast-start" onClick={() => setErr(false)}>
           <div className="alert">
@@ -169,7 +161,7 @@ const ImageProc = ({ lang }: Props) => {
                 d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
               />
             </svg>
-            <span>Image must be less than 1MB</span>
+            <span>Image must be less 1MB</span>
           </div>
         </button>
       )}
