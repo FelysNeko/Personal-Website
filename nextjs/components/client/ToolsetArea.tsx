@@ -33,10 +33,11 @@ const ToolsetArea = ({ lang }: Props) => {
   ];
 
   return (
-    <div role="tablist" className="tabs tabs-lifted">
-      {TOOLSET.map((proj) => (
-        <Fragment key={proj.en}>
+    <>
+      <div role="tablist" className="tabs tabs-lifted">
+        {TOOLSET.map((proj) => (
           <button
+            key={proj.en}
             role="tab"
             className={`tab overflow-hidden ${
               tool === proj.en ? "tab-active" : ""
@@ -45,15 +46,15 @@ const ToolsetArea = ({ lang }: Props) => {
           >
             {lang === "中" ? proj.cn : capitalize(proj.en)}
           </button>
-          <div
-            role="tabpanel"
-            className="tab-content h-[calc(100vh-192px)] border-neutral-800 min-h-96"
-          >
-            {proj.node}
-          </div>
-        </Fragment>
-      ))}
-    </div>
+        ))}
+      </div>
+      
+      <div className="h-[calc(100vh-192px)] border-x border-b border-neutral-800 min-h-96">
+        {TOOLSET.map((proj) => (
+          <Fragment key={proj.en}>{tool === proj.en && proj.node}</Fragment>
+        ))}
+      </div>
+    </>
   );
 };
 
