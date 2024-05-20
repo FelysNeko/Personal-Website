@@ -9,6 +9,9 @@ router = APIRouter()
 
 @router.post("/process")
 async def process_image(color: str, threshold: int, rev: bool, file: UploadFile):
+    if file.content_type not in ['image/jpg', 'image/png', 'image/jpeg', 'image/webp']:
+        raise HTTPException(status_code=415, detail=f'{file.content_type} is not supported')
+    
     try:
         raw = await file.read()
         image = \
