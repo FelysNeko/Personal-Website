@@ -42,9 +42,10 @@ const ImageProc = ({ lang }: Props) => {
     if (response && response.ok) {
       const raw = await response.blob();
       setResult(URL.createObjectURL(raw));
+      setErr(false);
     } else {
-      setOriginal("/firemoth-dark.png");
       setResult("/firemoth-dark.png");
+      setRaw(null);
       setErr(true);
     }
   };
@@ -146,7 +147,7 @@ const ImageProc = ({ lang }: Props) => {
       </div>
 
       {err && (
-        <button className="toast toast-start" onClick={() => setErr(false)}>
+        <div className="toast toast-start">
           <div className="alert">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +164,7 @@ const ImageProc = ({ lang }: Props) => {
             </svg>
             <span>Image must be less than 1MB</span>
           </div>
-        </button>
+        </div>
       )}
     </div>
   );
