@@ -49,7 +49,7 @@ const ToolsetArea = ({ lang }: Props) => {
         ))}
       </div>
 
-      <div className="h-[calc(100vh-160px)] mt-4 min-h-96">
+      <div className="h-[calc(100vh-156px)] mt-4 min-h-96">
         {TOOLSET.map((proj) => (
           <Fragment key={proj.en}>{tool === proj.en && proj.node}</Fragment>
         ))}
