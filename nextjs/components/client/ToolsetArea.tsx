@@ -3,14 +3,11 @@ import { Fragment, useState } from "react";
 import ChemCalc from "./toolset/ChemCalc";
 import ImageProc from "./toolset/ImageProc";
 import Future from "./toolset/Future";
+import { capitalize } from "@/utils/general";
 
 interface Props {
   lang: string;
 }
-
-const capitalize = (str: string) => {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-};
 
 const ToolsetArea = ({ lang }: Props) => {
   const [tool, setTool] = useState("image");
