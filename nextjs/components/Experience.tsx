@@ -10,7 +10,7 @@ const Experience = ({ lang }: Props) => {
 
   return (
     <section className="min-h-screen pt-20">
-      <h1 className="text-3xl font-bold mb-4">
+      <h1 className="text-3xl font-bold mb-4 lg:text-center">
         {lang === "中" ? "经历" : "EXPERIENCE"}
       </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">

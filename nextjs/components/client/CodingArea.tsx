@@ -8,11 +8,28 @@ interface Props {
   lang: string;
 }
 
-const sample: string = `let greet = |x| {
-    render 'hello ' + x + '!';
+const sample: string = `let add = |x, y| {
+    return x + y;
 }
 
-greet('world');
+let claim = |who| who + ' is my waifu!';
+
+let a = 10;
+let b = 1;
+
+if b or true {
+    if add(a, b) == 30 {
+        render a + ' + ' + b + ' = 30';
+    } elif a == 0 and b == 0 {
+        render 'hello, world!';
+    } else {
+        while a {
+            render a = a-1;
+        }
+        render claim('elysia');
+    }
+}
+
 `;
 
 const CodingArea = ({ lang }: Props) => {

@@ -84,7 +84,7 @@ const ImageProc = ({ lang }: Props) => {
 
   return (
     <div className="h-full">
-      <div className="flex flex-col w-full md:flex-row h-[calc(100vh-380px)] min-h-48 p-2">
+      <div className="flex flex-col w-full md:flex-row h-[calc(100vh-324px)] min-h-48 p-2">
         <div className="flex-grow relative">
           <Image src={original} alt="" style={{ objectFit: "contain" }} fill />
         </div>
@@ -115,7 +115,7 @@ const ImageProc = ({ lang }: Props) => {
         </div>
       </div>
 
-      <div className="py-4 px-2 md:px-6 flex items-center gap-2 lg:gap-4">
+      <div className="py-2 px-2 md:px-6 flex items-center gap-2 lg:gap-4">
         <h3 className="break-keep">{lang === "中" ? "反转" : "REVERSE"}</h3>
         <input
           type="checkbox"
@@ -131,17 +131,24 @@ const ImageProc = ({ lang }: Props) => {
           className="range"
           onChange={(e) => setThr(e.target.value)}
         />
-        <button className="ms-2" onClick={handleDownload}>
+        <button className="ms-2 me-1" onClick={handleDownload}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
-            fill="#ffc6f5"
             viewBox="0 0 16 16"
             style={{ scale: 1.4 }}
           >
-            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+              stroke="#ffc6f5"
+              strokeWidth={1}
+            />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+              stroke="#ffc6f5"
+              strokeWidth={1}
+            />
           </svg>
         </button>
       </div>

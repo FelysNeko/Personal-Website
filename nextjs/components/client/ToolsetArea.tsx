@@ -34,7 +34,7 @@ const ToolsetArea = ({ lang }: Props) => {
 
   return (
     <>
-      <div role="tablist" className="tabs tabs-lifted">
+      <div role="tablist" className="tabs tabs-bordered">
         {TOOLSET.map((proj) => (
           <button
             key={proj.en}
@@ -48,8 +48,8 @@ const ToolsetArea = ({ lang }: Props) => {
           </button>
         ))}
       </div>
-      
-      <div className="h-[calc(100vh-192px)] border-x border-b border-neutral-800 min-h-96">
+
+      <div className="h-[calc(100vh-160px)] mt-4 min-h-96">
         {TOOLSET.map((proj) => (
           <Fragment key={proj.en}>{tool === proj.en && proj.node}</Fragment>
         ))}
