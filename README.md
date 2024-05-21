@@ -26,7 +26,7 @@ Since I don't get any profit from this website, I have to keep the budget low. T
 
 Putting Cloudflare in front of Vercel seems unnecessary since they both have CDN/analytics, but it's not. If someone requests too much data to your website on Vercel (typically DDoS), Vercel will send you a huge bill for that traffic. However, if you put Cloudflare in front of Vercel, the former will cache the static files like images which is attackers' common target, so the traffic flow will not even hit Vercel. Cloudflare is the your last shield before Vercel charges you.
 
-Running a cluster on a super weak free EC2 instance sounds so bad, but I couldn't figure out a way to run them for free. Again, doing this will only let AWS changes me 1 dollar per month for key management fee. If I use ECS or EKS and a ALB in front of them, the monthly bill will probably exceed 50 dollars. Let me know if you any better solution.
+Running a cluster on a super weak free EC2 instance sounds so bad, but I couldn't figure out a way to run them for free. Again, doing this will only let AWS changes me 1 dollar per month for key management fee. If I use ECS or EKS and a ALB in front of them, the monthly bill will probably exceed 50 dollars. Let me know if there's any better solution.
 
 ## Future
 
