@@ -83,8 +83,8 @@ const ImageProc = ({ lang }: Props) => {
   };
 
   return (
-    <div className="h-full relative">
-      <div className="flex flex-col w-full md:flex-row h-[calc(100vh-324px)] min-h-48 p-2">
+    <>
+      <div className="flex flex-col w-full md:flex-row h-[calc(100vh-322px)] min-h-48 p-2">
         <div className="flex-grow relative">
           <Image src={original} alt="" style={{ objectFit: "contain" }} fill />
         </div>
@@ -94,7 +94,7 @@ const ImageProc = ({ lang }: Props) => {
         </div>
       </div>
 
-      <div className="w-full border border-neutral-800 py-2 absolute bottom-0">
+      <div className="w-full border border-neutral-800 py-2 mt-3 lg:mt-11">
         <div className="p-2 md:px-6 lg:flex items-center justify-between">
           <input
             type="file"
@@ -102,12 +102,13 @@ const ImageProc = ({ lang }: Props) => {
             accept=".jpg, .png"
             onChange={handleUpload}
           />
-          <div role="tablist" className="tabs tabs-boxed">
+          <div className="flex">
             {COLORCHOICE.map((color) => (
               <button
                 key={color.en}
-                role="tab"
-                className={`tab ${clr === color.en ? "tab-active" : ""}`}
+                className={`btn btn-sm lg:btn-md w-1/4 ${
+                  clr === color.en ? "btn-primary" : ""
+                }`}
                 onClick={() => setClr(color.en)}
               >
                 {lang === "中" ? color.cn : color.en.toUpperCase()}
@@ -175,7 +176,7 @@ const ImageProc = ({ lang }: Props) => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

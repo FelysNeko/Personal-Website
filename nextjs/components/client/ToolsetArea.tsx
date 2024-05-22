@@ -2,7 +2,6 @@
 import { Fragment, useState } from "react";
 import ChemCalc from "./toolset/ChemCalc";
 import ImageProc from "./toolset/ImageProc";
-import Future from "./toolset/Future";
 import { capitalize } from "@/utils/general";
 
 interface Props {
@@ -21,11 +20,6 @@ const ToolsetArea = ({ lang }: Props) => {
       cn: "化学计算器",
       en: "chemistry",
       node: <ChemCalc lang={lang} />,
-    },
-    {
-      cn: "未来",
-      en: "future",
-      node: <Future lang={lang} />,
     },
   ];
 
@@ -46,7 +40,7 @@ const ToolsetArea = ({ lang }: Props) => {
         ))}
       </div>
 
-      <div className="h-[calc(100vh-156px)] mt-4 min-h-96">
+      <div className="min-h-[calc(100vh-156px)] mt-4">
         {TOOLSET.map((proj) => (
           <Fragment key={proj.en}>{tool === proj.en && proj.node}</Fragment>
         ))}
