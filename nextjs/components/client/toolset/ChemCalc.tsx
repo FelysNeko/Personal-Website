@@ -8,7 +8,7 @@ interface Props {
 
 const ChemCalc = ({ lang }: Props) => {
   return (
-    <div className="grid md:grid-cols-2 md:grid-rows-6 md:grid-flow-col gap-6">
+    <div className="min-h-[calc(100vh-156px)] grid md:grid-cols-2 md:grid-rows-6 md:grid-flow-col gap-6">
       <Atom lang={lang} />
       <Molecule lang={lang} />
       <Balance lang={lang} />
