@@ -1,14 +1,7 @@
-import ToolsetArea from "@/components/client/ToolsetArea";
-import { getLangFromCookies } from "@/utils/cookies";
+import { redirect } from "next/navigation";
 
 const Toolset = () => {
-  const lang = getLangFromCookies();
-
-  return (
-    <section className="min-h-screen pt-20">
-      <ToolsetArea lang={lang}/>
-    </section>
-  );
+  redirect("/toolset/image");
 };
 
 export default Toolset;

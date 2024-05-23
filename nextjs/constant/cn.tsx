@@ -145,3 +145,14 @@ export const DOCS = (
     如果不在函数中使用会提前终止程序，和C语言一致。此外，除非以大括号结尾，否侧必须要加分号。
   </>
 );
+
+export const TOOLSET = [
+  {
+    key: "图片处理",
+    href: "/toolset/image",
+  },
+  {
+    key: "化学计算器",
+    href: "/toolset/chemistry",
+  },
+];

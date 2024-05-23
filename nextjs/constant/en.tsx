@@ -97,9 +97,9 @@ export const DOCS = (
     All variables and callables need to be declared as
     <code className="badge">{"let x = 10;"}</code> or
     <code className="badge">{"let x = |x| x+1;"}</code>. You do not need to
-    re-declared a variable when assigning a value to it. Assigning a new function to
-    callable is invalid. If a function has multiple lines or you do not want to
-    return anything, you can decalre it like this:
+    re-declared a variable when assigning a value to it. Assigning a new
+    function to callable is invalid. If a function has multiple lines or you do
+    not want to return anything, you can decalre it like this:
     <code className="badge">{"let x = |x| { x-1; }"}</code>
     Also, a variable can have the same name as a callable, since they
     standalone.
@@ -163,3 +163,14 @@ export const DOCS = (
     line of code end with brace.
   </>
 );
+
+export const TOOLSET = [
+  {
+    key: "image",
+    href: "/toolset/image",
+  },
+  {
+    key: "chemistry",
+    href: "/toolset/chemistry",
+  },
+];
