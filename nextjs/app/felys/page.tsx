@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import CodingArea from "@/components/client/CodingArea";
 import { getLangFromCookies } from "@/utils/cookies";
+
+export const metadata: Metadata = {
+  title: "Felys Interpreter",
+  description: "Online Felys Playground",
+};
 
 const Felys = () => {
   const lang = getLangFromCookies();
