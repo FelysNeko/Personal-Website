@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import { getLangFromCookies } from "@/utils/cookies";
 import ToolsetNav from "@/components/client/ToolsetNav";
+
+export const metadata: Metadata = {
+  title: "Felys Toolset",
+  description: "Collection of tools",
+};
 
 export default function RootLayout({
   children,
